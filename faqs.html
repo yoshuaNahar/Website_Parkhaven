@@ -10,9 +10,7 @@
 
     <title>Woongebouw Parkhaven</title>
 
-    <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <!-- Custom CSS -->
     <link href="css/style.css" rel="stylesheet">
 
     <!-- Fonts -->
@@ -31,6 +29,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-default" role="navigation">
         <div class="container">
+		
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -42,6 +41,7 @@
                 <!-- navbar-brand is hidden on larger screens, but visible when the menu is collapsed -->
                 <a class="navbar-brand" href="index.html">Parkhaven</a>
             </div>
+			
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
@@ -64,37 +64,88 @@
 				<a id="dutch_img"><img src="img/dutch.png" width="35px" height="35px"></img></a>
 				<a id="english_img"><img src="img/english.jpg" width="30px" height="30px"></img></a>
             </div>
-            <!-- /.navbar-collapse -->
         </div>
-        <!-- /.container -->
     </nav>
+
 
     <div class="container">
 
         <div class="row">
-            <div class="box">
+            <div class="box faqs_box">
                 <div class="page-header">
                     <h1 class="text-center">Frequently Asked Questions</h1>
-                </div>                
-                <div class="col-md-12">
+                </div>        
 
-                    <h4>1) Waar is de was ruimte?</h4>
-					<div class="well well-sm">Er bevinden 2 was ruimtes in het gebouw. Beide zijn te vinden op de 3e verdieping op kamer 333 en 491.</div>
-					<h4>2) Wanneer krijg ik mijn 2e sleutel?</h4>
-					<div class="well well-sm">xxxxxxxxx</div>
-					<h4>3) Waar is de was ruimte?</h4>
-					<div class="well well-sm">Er bevinden 2 was ruimtes in het gebouw. Beide zijn te vinden op de 3e verdieping op kamer 333 en 491.</div>
-					<h4>4) ...</h4>
-					<div class="well well-sm">xxxxxxxxx</div>					
-					<h4>5) ...</h4>
-					<div class="well well-sm">xxxxxxxxx</div>
-					<h4>6) ...</h4>
-					<div class="well well-sm">xxxxxxxxx</div>
-					<h4>7) ...</h4>
-					<div class="well well-sm">xxxxxxxxx</div>
-					<h4>8) ...</h4>
-					<div class="well well-sm">xxxxxxxxx</div>
-                </div>
+
+				<div class="panel-group faqs_page_panel_group" id="accordion" role="tablist" aria-multiselectable="true">
+				  <div class="panel panel-default faqs_page_panel">
+					<div class="panel-heading faqs_panel_heading" role="tab" id="headingOne">
+					  <h4 class="panel-title">
+						<span class="glyphicon glyphicon-triangle-right"></span>
+						<a role="button" data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+						  Waar is de was ruimte?
+						</a>
+					  </h4>
+					</div>
+					<div id="collapseOne" class="panel-collapse collapse faqs_panel_collapse" role="tabpanel" aria-labelledby="headingOne">
+					  <div class="panel-body">
+						Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 
+						Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. 
+					  </div>
+					</div>
+				  </div>
+				  <div class="panel panel-default faqs_page_panel">
+					<div class="panel-heading faqs_panel_heading" role="tab" id="headingTwo">
+					  <h4 class="panel-title">
+						<span class="glyphicon glyphicon-triangle-right"></span>
+						<a class="collapsed" role="button" data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+						  WANNEER KRIJG IK MIJN 2E SLEUTEL?
+						</a>
+					  </h4>
+					</div>
+					<div id="collapseTwo" class="panel-collapse collapse faqs_panel_collapse" role="tabpanel" aria-labelledby="headingTwo">
+					  <div class="panel-body">
+						Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 
+					  </div>
+					</div>
+				  </div>
+				  <div class="panel panel-default faqs_page_panel">
+					<div class="panel-heading faqs_panel_heading" role="tab" id="headingThree">
+					  <h4 class="panel-title">
+						<span class="glyphicon glyphicon-menu-right"></span>
+						<a class="collapsed" role="button" data-toggle="collapse" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+						   WAAR IS DE WAS RUIMTE?
+						</a>
+					  </h4>
+					</div>
+					<div id="collapseThree" class="panel-collapse collapse faqs_panel_collapse" role="tabpanel" aria-labelledby="headingThree">
+					  <div class="panel-body">
+						Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+						3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+						Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
+						Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+						Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+					  </div>
+					</div>
+				  </div>
+				  <div class="panel panel-default faqs_page_panel">
+					<div class="panel-heading faqs_panel_heading" role="tab" id="headingFour">
+					  <h4 class="panel-title">
+						<span class="glyphicon glyphicon-menu-right"></span>
+						<a class="collapsed" role="button" data-toggle="collapse" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+						   KAN IK DE ACHTER INGANG ALTIJD GEBRUIKEN? etc...
+						</a>
+					  </h4>
+					</div>
+					<div id="collapseFour" class="panel-collapse collapse faqs_panel_collapse" role="tabpanel" aria-labelledby="headingFour">
+					  <div class="panel-body">
+						xxx
+					  </div>
+					</div>
+				  </div>
+				</div>
+
+
             </div>
         </div>
 
@@ -132,9 +183,10 @@
                     <img id="footerLogo" src="img/footer-logo.png" alt="Footer Stadswonen Logo"/></a>
                 </div>
             </div>
-      </div>
+		</div>
 
     </div>
+
 
     <footer>
         <div class="container">
@@ -144,7 +196,6 @@
                         <li><a href="index.html">Home</a></li>
                         <li><a href="contact.html">Contact</a></li>
 						<li><a href="faqs.html">Faq's</a></li>						
-                        <li><a href="over_ons.html">Over Ons</a></li>
                         <li><a href="#">Was Schema</a></li>
                     </ul>
                 </div>

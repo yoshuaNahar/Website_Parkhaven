@@ -10,9 +10,7 @@
 
     <title>Woongebouw Parkhaven</title>
 
-    <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <!-- Custom CSS -->
     <link href="css/style.css" rel="stylesheet">
 
     <!-- Fonts -->
@@ -31,6 +29,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-default" role="navigation">
         <div class="container">
+		
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -42,8 +41,12 @@
                 <!-- navbar-brand is hidden on larger screens, but visible when the menu is collapsed -->
                 <a class="navbar-brand" href="index.html">Parkhaven</a>
             </div>
+			
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			
+				<a href="index.html" class="navbar-left"><img id="menu-img" src="img/Untitled.png"></a>
+
                 <ul class="nav navbar-nav">
                     <li>
                         <a href="index.html">Home</a>
@@ -63,10 +66,9 @@
 				<a id="english_img"><img src="img/english.jpg" width="30px" height="30px"></img></a>
 
             </div>
-            <!-- /.navbar-collapse -->
         </div>
-        <!-- /.container -->
     </nav>
+
 
     <div class="container">
 
@@ -75,23 +77,40 @@
                 <div class="page-header">
                     <h1 class="text-center">Contact</h1>
                 </div>
-                <div class="col-md-6">
-
-                    <h2>Beheerder</h2>
-					<p>Email: Beheerder@Parkhaven<br>Telefoon nummer: 06<br> Alleen bereikbaar tussen 12-20u</p>
-					<h1 id="contact-beheerder-header">Technische Beheerder</h1>
-
-                </div>
-
-                <div class="col-md-6">
-                    <div class="well">
-                        <h2>Spreekuur</h2>
-                        Iedere maandag van 20:30 tot 21:30 in kamer 225 (2e verdieping gele gang). xxx Voor het stellen van vragen of het kopen van was muntjes.
-
-                            <li><a href="http://facebook.com/">Facebook</a></li>
-                                                
+				
+				<div class="col-md-6">
+                    <div class="well contact_page_well">
+                        <h2>Algemene Beheerder</h2>
+						<ul>
+							<li>Ryan xxx</li>
+							<li>Telefoon: 010 245 67 00 (Tussen 09:00 - 16:00)</li>
+						</ul>
                     </div>
                 </div>
+				
+				<div class="col-md-6">
+                    <div class="well contact_page_well">
+                        <h2>Stadswonen Rotterdam</h2>
+                        <ul>
+							<li>Openingstijden: Maandag t/m vrijdag 8:30 - 16:30</li>
+							<li>Telefoon: 010 245 67 00</li>
+							<li>Email: info@stadswonenrotterdam.nl</li>
+							<li>Adres: Rochusserstraat 21, 3015 EA Rotterdam</li>
+							<li>Website: <a href="https://www.stadswonenrotterdam.nl">stadswonenrotterdam.nl</a></li>
+						</ul>                   
+                    </div>
+                </div>
+				
+				<div class="col-md-6 techBeheerder_under_algBeheerder_well">
+                    <div class="well contact_page_well">
+						<h2>Technische Beheerder</h2>
+						<ul>
+							<li>xxx xxx</li>
+							<li>Telefoon: 010 245 67 00 (Tussen 09:00 - 16:00)</li>
+						</ul>
+					</div>
+                </div>
+				
             </div>
         </div>
 
@@ -100,20 +119,17 @@
                 <div class="col-md-7">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2461.4701755465085!2d4.459397551864923!3d51.90713237960336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c434906e240b13%3A0x7c5c8c8d1ba7be63!2sKees+van+Dongenhof+9%2C+3024+NA+Rotterdam!5e0!3m2!1sen!2snl!4v1461525923437" width="633" height="475" frameborder="0" style="border:0" allowfullscreen></iframe>
                 </div>
+				
                 <div class="col-md-5">
                     <div class="panel panel-default panel-transparent">
                       <div class="panel-heading">
-                        <h2 class="panel-title">Handige Links</h2>
+                        <h2 class="panel-title">Spreekuur</h2>
                       </div>
                       <div class="panel-body">
-                        <ul>
-                            <li><a href="pdf/Beheerreglement.pdf" download="Beheerreglement">Beheerreglement</a></li>
-                            <li><a href="pdf/Algemene_Huurvoorwaarden.pdf" download="Algemene_Huurvoorwaarden">Algemene Huurvoorwaarden</a></li>
-                            <li><a href="https://www.stadswonenrotterdam.nl/">Reparatie Verzoek</a></li>
-                            <li><a href="http://www.rotterdam.nl/product:grofvuil_naar_milieupark_brengen">Ophalen van Grofvuil</a></li>
-                            <li><a href="https://www.politie.nl/themas/diefstal-fiets.html">Aangifte Fiets Diefstal</a></li>
-                            <li><a href="pdf/Vlam_in_de_pan!.pdf" download="Vlam in de Pan">Vlam in de Pan!</a></li>
-                            <li><a href="pdf/Onderhoudswijzer.pdf" download="Onderhoudswijzer">Onderhoudswijzer</a></li>
+                        <ul class="contact_spreekuur_panel" style="list-style-type:none">
+                            <li>Iedere Maandag</li>
+                            <li>Tijdstip: 20:30 - 21:30</li>
+                            <li>Locatie: Kamer 225 2e verdieping</li>
                         </ul>
                       </div>
                     </div>
@@ -128,9 +144,10 @@
                     <img id="footerLogo" src="img/footer-logo.png" alt="Footer Stadswonen Logo"/></a>
                 </div>
             </div>
-      </div>
+		</div>
 
     </div>
+
 
     <footer>
         <div class="container">
@@ -140,7 +157,6 @@
                         <li><a href="index.html">Home</a></li>
                         <li><a href="contact.html">Contact</a></li>
 						<li><a href="faqs.html">Faq's</a></li>					
-                        <li><a href="over_ons.html">Over Ons</a></li>
                         <li><a href="#">Was Schema</a></li>
                     </ul>
                 </div>

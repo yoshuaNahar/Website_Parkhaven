@@ -13,7 +13,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "Josefin Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: Arial,Tahoma, Helvetica,"Helvetica Neue",,sans-serif;
     text-transform: uppercase;
     letter-spacing: 1px;
 }
@@ -21,11 +21,12 @@ h1 {
     margin: 0;
     font-size: 2em;
     font-weight: 800;
+	font-family: "Josefin Slab", "Helvetica Neue", Helvetica, Arial,sans-serif;
 }
 h2 {
     font-size: 1.1em;
     margin-left: 20px;
-    font-weight: 800;
+    font-weight: 600;
     text-decoration: underline;
 }
 h4 {
@@ -84,10 +85,10 @@ hr {
 }
 
 #menu-img {
-    width: 160px;
-	height: 87px;
+    width: 155px;
+	height: 82px;
 	padding: 0 -300px 0 0;
-	margin: 3px -300px 0 0;
+	margin: 6px -300px 0 0;
 }
 .navbar-brand {
     text-transform: uppercase;
@@ -100,6 +101,7 @@ nav {
 	margin-left: auto !important;
 	margin-right: auto !important;
 	background: rgba(255,255,255,0.75) !important;
+	margin-bottom: 18px !important;
 }
  .navbar-default .navbar-nav > .active > a, 
  .navbar-default .navbar-nav > .active > a:hover, 
@@ -108,7 +110,7 @@ nav {
  }
 
 .navbar-default {
-	margin-top: 15px;
+	margin-top: 10px;
 }
 
 .navbar-nav {
@@ -119,12 +121,12 @@ nav {
 
 
 .img-full {
-    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.4), 0 8px 18px 0 rgba(0, 0, 0, 0.25);
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.3), 0 6px 15px 0 rgba(0, 0, 0, 0.22);
     min-width: 100%;
-	height: 320px;
+	height: 310px;
 }
 .box-img {
-    margin-bottom: 25px;
+    margin-bottom: 18px;
     background: #fff;
     background: rgba(255,255,255,0.9);
 }
@@ -150,7 +152,7 @@ nav {
 }
 
 .box {
-    margin-bottom: 20px;
+    margin-bottom: 18px;
     padding: 30px 15px;
     background: #fff;
     background: rgba(255,255,255,0.85);
@@ -223,6 +225,45 @@ footer li {
 }
 a {
     color: #000;
+}
+
+/* CONTACT PAGE */
+.techBeheerder_under_algBeheerder_well {
+	margin-top: -55px;
+}
+
+.contact_page_well {
+	margin-left: 0;
+}
+
+.contact_spreekuur_panel {
+	padding-left: 20px;
+}
+s
+/* FAQS PAGE */
+.faqs_box {
+	min-height: 450px;
+}
+
+.faqs_page_panel_group {
+	margin: 0 15px;
+}
+.faqs_page_panel {
+	margin: 15px 0 !important;
+	background-color: transparent;
+}
+.faqs_panel_heading {
+    background: rgba(255,255,255,0.4) !important;
+}
+.faqs_panel_collapse {
+	background: rgba(255,255,255,0.4) !important;
+}
+
+span.glyphicon-triangle-right {
+    font-size: 0.8em;
+}
+span.glyphicon-menu-right {
+    font-size: 0.8em;
 }
 
 @media screen and (min-width:768px) {
