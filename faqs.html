@@ -1,66 +1,71 @@
-<!doctype html>
-<html lang="nl_NL">
+<!DOCTYPE html>
+<html lang="nl-NL">
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+	
+	<meta name="author" content="Wooncommissie Parkhaven">
+    <meta name="description" content="Studentenflat Parkhaven Rotterdam">
+	<meta name="keywords" content="Parkhaven, Kees van Dongenhof, Coolhaven, Studentenhuis, Studentenflat, Stadswonen, Studenten, Starters, huren, Rotterdam">
+	<meta name="language" content="Dutch">
+	<meta name="robots" content="index, follow">
+	<meta name="distribution" content="global">
+
+	<link rel="icon" href="img/favicon.ico" type="image/x-icon">
 
     <title>Woongebouw Parkhaven</title>
 
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/custom.min.css">	
 
-    <!-- Fonts -->
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
 </head>
 
 <body>
-    <!-- Navigation -->
     <nav class="navbar navbar-default" role="navigation">
         <div class="container">
-		
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <!-- navbar-brand is hidden on larger screens, but visible when the menu is collapsed -->
-                <a class="navbar-brand" href="index.html">Parkhaven</a>
-            </div>
-			
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <div >
+				<a href="index.html" class="navbar-left"><img id="menu-img" src="img/parkhaven-logo.png"></a>
 
-				<a href="index.html" class="navbar-left"><img id="menu-img" src="img/Untitled.png"></a>
-
-				<ul class="nav navbar-nav">
+                <ul class="nav navbar-nav">
                     <li>
                         <a href="index.html">Home</a>
                     </li>
-                    <li>
-                        <a href="contact.html">Contact</a>
+					<li>
+						<a id="dLabel" data-target="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+							Wooncommissie <span class="glyphicon glyphicon-menu-down"></span>
+						</a>
+						<ul class="dropdown-menu" aria-labelledby="dLabel">
+							<li class="dropdown_li">
+								<a class="dropdown_a" href="contact.html">Contact</a>
+							</li>
+							<li class="dropdown_li">
+								<a class="dropdown_a" href="contact.html">Wooncommissie</a>
+							</li>
+						</ul>
                     </li>
-                    <li class="active">
-                        <a href="faqs.html">FAQ's</a>
+					<li class="active">
+						<a id="dLabel" data-target="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+							Info <span class="glyphicon glyphicon-menu-down"></span>
+						</a>
+						<ul class="dropdown-menu" aria-labelledby="dLabel">
+							<li class="dropdown_li">
+								<a class="dropdown_a" href="faciliteiten.html">Faciliteiten</a>
+							</li>
+							<li class="dropdown_li">
+								<a class="dropdown_a" href="info.html">Info</a>
+							</li>
+							<li class="dropdown_li active2">
+								<a class="dropdown_a" href="faqs.html">Faqs</a>
+							</li>
+						</ul>
                     </li>
                     <li>
-                        <a href="#">Was schema</a>
-                    </li>				
+                        <a href="wasschema.html">Was schema</a>
+                    </li>
                 </ul>
+				
 				<a id="dutch_img"><img src="img/dutch.png" width="35px" height="35px"></img></a>
 				<a id="english_img"><img src="img/english.jpg" width="30px" height="30px"></img></a>
             </div>
@@ -71,116 +76,188 @@
     <div class="container">
 
         <div class="row">
-            <div class="box faqs_box">
-                <div class="page-header">
-                    <h1 class="text-center">Frequently Asked Questions</h1>
-                </div>        
+            <div class="box">
+                <div class="page-header horizontal_line"></div>        
 
 
 				<div class="panel-group faqs_page_panel_group" id="accordion" role="tablist" aria-multiselectable="true">
+				
 				  <div class="panel panel-default faqs_page_panel">
 					<div class="panel-heading faqs_panel_heading" role="tab" id="headingOne">
 					  <h4 class="panel-title">
-						<span class="glyphicon glyphicon-triangle-right"></span>
+						<span class="glyphicon glyphicon-menu-right"></span>
 						<a role="button" data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-						  Waar is de was ruimte?
+						  Hoe kom ik in aanmerking voor een woning in het woongebouw Parkhaven?
 						</a>
 					  </h4>
 					</div>
 					<div id="collapseOne" class="panel-collapse collapse faqs_panel_collapse" role="tabpanel" aria-labelledby="headingOne">
 					  <div class="panel-body">
-						Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 
-						Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. 
+						Om in aanmerking te komen voor een woning in woongebouw Parkhaven dien je ingeschreven te staan bij Stadswonen Rotterdam. Je kunt jezelf inschrijven via <a href="https://www.stadswonenrotterdam.nl/" target="_blank">stadswonenrotterdam.nl</a>. Op deze website kun je, nadat je bent ingeschreven, reageren op vrijkomende kamers, studio’s of appartementen.
 					  </div>
 					</div>
+					
 				  </div>
 				  <div class="panel panel-default faqs_page_panel">
 					<div class="panel-heading faqs_panel_heading" role="tab" id="headingTwo">
 					  <h4 class="panel-title">
-						<span class="glyphicon glyphicon-triangle-right"></span>
+						<span class="glyphicon glyphicon-menu-right"> </span>
 						<a class="collapsed" role="button" data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-						  WANNEER KRIJG IK MIJN 2E SLEUTEL?
+						  Wanneer krijg ik mijn tweede sleutel?
 						</a>
 					  </h4>
 					</div>
 					<div id="collapseTwo" class="panel-collapse collapse faqs_panel_collapse" role="tabpanel" aria-labelledby="headingTwo">
 					  <div class="panel-body">
-						Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 
+						Je tweede oftewel reserve sleutel krijg je bij de beheerder. Dit kan tijdens het wekelijkse spreekuur.
 					  </div>
 					</div>
 				  </div>
+				  
 				  <div class="panel panel-default faqs_page_panel">
 					<div class="panel-heading faqs_panel_heading" role="tab" id="headingThree">
 					  <h4 class="panel-title">
-						<span class="glyphicon glyphicon-menu-right"></span>
+						<span class="glyphicon glyphicon-menu-right"> </span>
 						<a class="collapsed" role="button" data-toggle="collapse" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-						   WAAR IS DE WAS RUIMTE?
+						   Ik ga verhuizen, hoe krijg ik de poort van het binnenterrein open?
 						</a>
 					  </h4>
 					</div>
 					<div id="collapseThree" class="panel-collapse collapse faqs_panel_collapse" role="tabpanel" aria-labelledby="headingThree">
 					  <div class="panel-body">
-						Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
-						3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
-						Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
-						Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
-						Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+						Dit dien je met de technische beheerder af te spreken. Neem uiterlijk 48 uur van tevoren contact met hem op. Het grote hek mag de hele dag t/m 20:00 open staan.
 					  </div>
 					</div>
 				  </div>
+				  
 				  <div class="panel panel-default faqs_page_panel">
 					<div class="panel-heading faqs_panel_heading" role="tab" id="headingFour">
 					  <h4 class="panel-title">
 						<span class="glyphicon glyphicon-menu-right"></span>
 						<a class="collapsed" role="button" data-toggle="collapse" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-						   KAN IK DE ACHTER INGANG ALTIJD GEBRUIKEN? etc...
+							Wanneer en waar is het spreekuur van de beheerders?
 						</a>
 					  </h4>
 					</div>
 					<div id="collapseFour" class="panel-collapse collapse faqs_panel_collapse" role="tabpanel" aria-labelledby="headingFour">
 					  <div class="panel-body">
-						xxx
+						Het spreekuur van de beheerders wordt gehouden in het kantoor van de wooncommissie (Kamer 225).<br>
+						Het spreekuur is iedere maandagavond van 20:30 tot 21:30.
 					  </div>
 					</div>
 				  </div>
+				  
+				<div class="panel panel-default faqs_page_panel">
+					<div class="panel-heading faqs_panel_heading" role="tab" id="headingFive">
+					  <h4 class="panel-title">
+						<span class="glyphicon glyphicon-menu-right"></span>
+						<a class="collapsed" role="button" data-toggle="collapse" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+							Ik heb een acuut probleem zoals wateroverlast, uitgevallen stroom of brand.
+						</a>
+					  </h4>
+					</div>
+					<div id="collapseFive" class="panel-collapse collapse faqs_panel_collapse" role="tabpanel" aria-labelledby="headingFive">
+					  <div class="panel-body">
+						Bel in geval van brand altijd eerst 112.<br>
+						Bel vervolgens de beheerders op 0639089365 of 0639089366.<br>
+						Zijn de beheerders niet bereikbaar? Bel dan overdag naar het reparatieverzoekenbureau van Stadswonen Rotterdam op 010 24 56 700. Buiten kantooruren bereik je de nooddienst via hetzelfde telefoonnummer.
+					  </div>
+					</div>
+				  </div>
+				  
+				  <div class="panel panel-default faqs_page_panel">
+					<div class="panel-heading faqs_panel_heading" role="tab" id="headingSix">
+					  <h4 class="panel-title">
+						<span class="glyphicon glyphicon-menu-right"></span>
+						<a class="collapsed" role="button" data-toggle="collapse" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+							De afzuigkap in mijn woning lijkt niet te werken.
+						</a>
+					  </h4>
+					</div>
+					<div id="collapseSix" class="panel-collapse collapse faqs_panel_collapse" role="tabpanel" aria-labelledby="headingSix">
+					  <div class="panel-body">
+						Woongebouw Parkhaven heeft een centraal afzuigsysteem. Dit werkt continu en extra tijdens etenstijden, wat tot gevolg heeft dat een afzuigkap niet individueel is aan te zetten.<br>
+						Dat deze niet reageert als je het aanzet, betekent dan ook niet dat de afzuigkap niet werkt, maar dat de afzuiging centraal geregeld is.
+					  </div>
+					</div>
+				  </div>
+				  
+				  <div class="panel panel-default faqs_page_panel">
+					<div class="panel-heading faqs_panel_heading" role="tab" id="headingSeven">
+					  <h4 class="panel-title">
+						<span class="glyphicon glyphicon-menu-right"></span>
+						<a class="collapsed" role="button" data-toggle="collapse" href="#collapseSeven" aria-expanded="false" aria-controls="headingSeven">
+							Waar is de was ruimte?
+						</a>
+					  </h4>
+					</div>
+					<div id="collapseSeven" class="panel-collapse collapse faqs_panel_collapse" role="tabpanel" aria-labelledby="headingSeven">
+					  <div class="panel-body">
+						Het woongebouw heeft 2 wasruimtes. Wasruimte A bevindt zich op de derde verdieping in het A gedeelte (tegenover kamer 80). Wasruimte C bevindt zich ook op de derde verdieping, maar in het C gedeelte (naast kamer 266)
+					  </div>
+					</div>
+				  </div>
+
+					<div class="panel panel-default faqs_page_panel">
+						<div class="panel-heading faqs_panel_heading" role="tab" id="headingEight">
+						  <h4 class="panel-title">
+							<span class="glyphicon glyphicon-menu-right"></span>
+							<a class="collapsed" role="button" data-toggle="collapse" href="#collapseEight" aria-expanded="false" aria-controls="collapseEight">	
+								Waar koop ik wasmuntjes?
+							</a>
+						  </h4>
+						</div>
+						<div id="collapseEight" class="panel-collapse collapse faqs_panel_collapse" role="tabpanel" aria-labelledby="headingEight">
+						  <div class="panel-body">
+							Wasmuntjes zijn te koop tijdens het wekelijkse spreekuur (maandag 20:30 t/m 21:30 in kamer 225). Je kunt de muntjes contant of via Paypal betalen. Een muntje kost 1 euro en je mag maximaal 6 kopen per week, per huisnummer.
+						  </div>
+						</div>
+					  </div>
+				  
+					<div class="panel panel-default faqs_page_panel">
+						<div class="panel-heading faqs_panel_heading" role="tab" id="headingNine">
+						  <h4 class="panel-title">
+							<span class="glyphicon glyphicon-menu-right"></span>
+							<a class="collapsed" role="button" data-toggle="collapse" href="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+								Ik heb afval wat niet in de container past, waar kan ik dit kwijt?
+							</a>
+						  </h4>
+						</div>
+						<div id="collapseNine" class="panel-collapse collapse faqs_panel_collapse" role="tabpanel" aria-labelledby="headingNine">
+						  <div class="panel-body">
+							Afval wat niet in de container past, zoals kartonnen dozen, verfspullen of kleine elektrische apparaten, wordt opgehaald door de Roteb.<br>
+							Voor het ophalen van je spullen dien je een afspraak te maken via de website van de gemeente Rotterdam (zie handige links op de homepage) of via het centrale telefoonnummer van de gemeente 14 010. 
+						  </div>
+						</div>
+					</div>
+				  
+					<div class="panel panel-default faqs_page_panel">
+						<div class="panel-heading faqs_panel_heading" role="tab" id="headingTen">
+						  <h4 class="panel-title">
+							<span class="glyphicon glyphicon-menu-right"></span>
+							<a class="collapsed" role="button" data-toggle="collapse" href="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+								Kan ik met mijn sleutels overal naar binnen?					
+							</a>
+						  </h4>
+						</div>
+						<div id="collapseTen" class="panel-collapse collapse faqs_panel_collapse" role="tabpanel" aria-labelledby="headingTen">
+						  <div class="panel-body">
+							Met jouw kamersleutels kun je alle hoofd- en tussendeuren mee openen. Andere ruimtes zoals de wasruimtes en fietsenstalling in de kelder kan je ook met je sleutels openen.
+						  </div>
+						</div>
+					</div>
+
 				</div>
 
-
+                <div class="page-header horizontal_line"></div>        
             </div>
         </div>
-
-        <div class="row">
-            <div class="box">
-                <div class="col-md-7">
-                    <p>Use as many boxes as you like, and put anything you want in them! They are great for just about anything, the sky's the limit!</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc placerat diam quis nisl vestibulum dignissim. In hac habitasse platea dictumst. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-                </div>
-                <div class="col-md-5">
-                    <div class="panel panel-default panel-transparent">
-                      <div class="panel-heading">
-                        <h2 class="panel-title">Handige Links</h2>
-                      </div>
-                      <div class="panel-body">
-                        <ul>
-                            <li><a href="pdf/Beheerreglement.pdf" download="Beheerreglement">Beheerreglement</a></li>
-                            <li><a href="pdf/Algemene_Huurvoorwaarden.pdf" download="Algemene_Huurvoorwaarden">Algemene Huurvoorwaarden</a></li>
-                            <li><a href="https://www.stadswonenrotterdam.nl/">Reparatie Verzoek</a></li>
-                            <li><a href="http://www.rotterdam.nl/product:grofvuil_naar_milieupark_brengen">Ophalen van Grofvuil</a></li>
-                            <li><a href="https://www.politie.nl/themas/diefstal-fiets.html">Aangifte Fiets Diefstal</a></li>
-                            <li><a href="pdf/Vlam_in_de_pan!.pdf" download="Vlam in de Pan">Vlam in de Pan!</a></li>
-                            <li><a href="pdf/Onderhoudswijzer.pdf" download="Onderhoudswijzer">Onderhoudswijzer</a></li>
-                        </ul>
-                      </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
+		
         <div class="row">           
-            <div class="box">
-                <div class="col-md-12">
-                    <a href="https://www.stadswonenrotterdam.nl/">
-                    <img id="footerLogo" src="img/footer-logo.png" alt="Footer Stadswonen Logo"/></a>
+            <div class="box stadswonen_logo_bug_low_width">
+                <div class="col-xs-12">
+                    <a id="stadswonen_logo_link" href="https://www.stadswonenrotterdam.nl/">
+                    <img id="stadswonen_logo" src="img/stadswonen-logo.png" alt="Stadswonen Logo"/></a>
                 </div>
             </div>
 		</div>
@@ -190,27 +267,27 @@
 
     <footer>
         <div class="container">
-            <div class="row">
-                <div class="col-md-6 text-left">
+            <div class="row footer_link_and_copyright_text">
+                <div class="col-xs-6 text-left">
                     <ul>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="contact.html">Contact</a></li>
-						<li><a href="faqs.html">Faq's</a></li>						
-                        <li><a href="#">Was Schema</a></li>
+						<li><a href="wooncommissie.html">Wooncommissie</a></li>
+						<li><a href="faciliteiten.html">Faciliteiten</a></li>
+						<li><a href="info.html">Info</a></li>
+						<li><a href="faqs.html">Faq's</a></li>
+                        <li><a href="wasschema.html">Was Schema</a></li>
                     </ul>
                 </div>
-                <div class="col-md-6 text-right">
+                <div class="col-xs-6 text-right">
                     <p>Copyright &copy; 2016, Alle Rechten Voorbehouden</p>
                 </div>                
             </div>
         </div>
     </footer>
-
-    <!-- jQuery -->
+	
     <script src="js/jquery.js"></script>
-    <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
-
 </body>
 
 </html>

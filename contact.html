@@ -1,61 +1,65 @@
-<!doctype html>
-<html lang="nl_NL">
+<!DOCTYPE html>
+<html lang="nl-NL">
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+	
+	<meta name="author" content="Wooncommissie Parkhaven">
+    <meta name="description" content="Studentenflat Parkhaven Rotterdam">
+	<meta name="keywords" content="Parkhaven, Kees van Dongenhof, Coolhaven, Studentenhuis, Studentenflat, Stadswonen, Studenten, Starters, huren, Rotterdam">
+	<meta name="language" content="Dutch">
+	<meta name="robots" content="index, follow">
+	<meta name="distribution" content="global">
+
+	<link rel="icon" href="img/favicon.ico" type="image/x-icon">
 
     <title>Woongebouw Parkhaven</title>
 
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/custom.min.css">	
 
-    <!-- Fonts -->
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
 </head>
 
 <body>
-    <!-- Navigation -->
     <nav class="navbar navbar-default" role="navigation">
         <div class="container">
-		
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <!-- navbar-brand is hidden on larger screens, but visible when the menu is collapsed -->
-                <a class="navbar-brand" href="index.html">Parkhaven</a>
-            </div>
-			
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-			
-				<a href="index.html" class="navbar-left"><img id="menu-img" src="img/Untitled.png"></a>
+            <div >
+				<a href="index.html" class="navbar-left"><img id="menu-img" src="img/parkhaven-logo.png"></a>
 
                 <ul class="nav navbar-nav">
                     <li>
                         <a href="index.html">Home</a>
                     </li>
-                    <li class="active">
-                        <a href="contact.html">Contact</a>
+					<li class="active">
+						<a id="dLabel" data-target="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+							Wooncommissie <span class="glyphicon glyphicon-menu-down"></span>
+						</a>
+						<ul class="dropdown-menu" aria-labelledby="dLabel">
+							<li class="dropdown_li">
+								<a class="dropdown_a active2" href="contact.html">Contact</a>
+							</li>
+							<li class="dropdown_li">
+								<a class="dropdown_a" href="contact.html">Wooncommissie</a>
+							</li>
+						</ul>
                     </li>
-                    <li>
-                        <a href="faqs.html">FAQ's</a>
+					<li>
+						<a id="dLabel" data-target="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+							Info <span class="glyphicon glyphicon-menu-down"></span>
+						</a>
+						<ul class="dropdown-menu" aria-labelledby="dLabel">
+							<li class="dropdown_li">
+								<a class="dropdown_a" href="faciliteiten.html">Faciliteiten</a>
+							</li>
+							<li class="dropdown_li">
+								<a class="dropdown_a" href="info.html">Info</a>
+							</li>
+							<li class="dropdown_li">
+								<a class="dropdown_a" href="faqs.html">Faqs</a>
+							</li>
+						</ul>
                     </li>
                     <li>
                         <a href="wasschema.html">Was schema</a>
@@ -64,25 +68,22 @@
 				
 				<a id="dutch_img"><img src="img/dutch.png" width="35px" height="35px"></img></a>
 				<a id="english_img"><img src="img/english.jpg" width="30px" height="30px"></img></a>
-
             </div>
         </div>
     </nav>
 
-
+	
     <div class="container">
 
         <div class="row">
             <div class="box">
-                <div class="page-header">
-                    <h1 class="text-center">Contact</h1>
-                </div>
+                <div class="page-header horizontal_line"></div>
 				
 				<div class="col-md-6">
                     <div class="well contact_page_well">
                         <h2>Algemene Beheerder</h2>
 						<ul>
-							<li>Ryan xxx</li>
+							<li>Ryan Winkelaar</li>
 							<li>Telefoon: 010 245 67 00 (Tussen 09:00 - 16:00)</li>
 						</ul>
                     </div>
@@ -96,7 +97,8 @@
 							<li>Telefoon: 010 245 67 00</li>
 							<li>Email: info@stadswonenrotterdam.nl</li>
 							<li>Adres: Rochusserstraat 21, 3015 EA Rotterdam</li>
-							<li>Website: <a href="https://www.stadswonenrotterdam.nl">stadswonenrotterdam.nl</a></li>
+							<li>Website: <a href="https://www.stadswonenrotterdam.nl/" target="_blank">stadswonenrotterdam.nl</a></li>
+							<li>Noodnummer: 010 245 67 00</li>
 						</ul>                   
                     </div>
                 </div>
@@ -105,17 +107,19 @@
                     <div class="well contact_page_well">
 						<h2>Technische Beheerder</h2>
 						<ul>
-							<li>xxx xxx</li>
+							<li>Alexander Dick</li>
 							<li>Telefoon: 010 245 67 00 (Tussen 09:00 - 16:00)</li>
 						</ul>
 					</div>
                 </div>
 				
+				<div class="page-header horizontal_line"></div>
             </div>
         </div>
 
         <div class="row">
             <div class="box">
+				<div class="page-header horizontal_line"></div>
                 <div class="col-md-7">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2461.4701755465085!2d4.459397551864923!3d51.90713237960336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c434906e240b13%3A0x7c5c8c8d1ba7be63!2sKees+van+Dongenhof+9%2C+3024+NA+Rotterdam!5e0!3m2!1sen!2snl!4v1461525923437" width="633" height="475" frameborder="0" style="border:0" allowfullscreen></iframe>
                 </div>
@@ -134,14 +138,15 @@
                       </div>
                     </div>
                 </div>
+				<div class="page-header horizontal_line"></div>
             </div>
         </div>
 
         <div class="row">           
-            <div class="box">
-                <div class="col-md-12">
-                    <a href="https://www.stadswonenrotterdam.nl/">
-                    <img id="footerLogo" src="img/footer-logo.png" alt="Footer Stadswonen Logo"/></a>
+            <div class="box stadswonen_logo_bug_low_width">
+                <div class="col-xs-12">
+                    <a id="stadswonen_logo_link" href="https://www.stadswonenrotterdam.nl/">
+                    <img id="stadswonen_logo" src="img/stadswonen-logo.png" alt="Stadswonen Logo"/></a>
                 </div>
             </div>
 		</div>
@@ -151,27 +156,27 @@
 
     <footer>
         <div class="container">
-            <div class="row">
-                <div class="col-md-6 text-left">
+            <div class="row footer_link_and_copyright_text">
+                <div class="col-xs-6 text-left">
                     <ul>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="contact.html">Contact</a></li>
-						<li><a href="faqs.html">Faq's</a></li>					
-                        <li><a href="#">Was Schema</a></li>
+						<li><a href="wooncommissie.html">Wooncommissie</a></li>
+						<li><a href="faciliteiten.html">Faciliteiten</a></li>
+						<li><a href="info.html">Info</a></li>
+						<li><a href="faqs.html">Faq's</a></li>
+                        <li><a href="wasschema.html">Was Schema</a></li>
                     </ul>
                 </div>
-                <div class="col-md-6 text-right">
+                <div class="col-xs-6 text-right">
                     <p>Copyright &copy; 2016, Alle Rechten Voorbehouden</p>
                 </div>                
             </div>
         </div>
     </footer>
 
-    <!-- jQuery -->
     <script src="js/jquery.js"></script>
-    <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
-
 </body>
 
 </html>
