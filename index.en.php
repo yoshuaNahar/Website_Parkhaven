@@ -1,36 +1,22 @@
+<?php require_once( 'couch/cms.php' ); ?>
+<cms:template title='homepage_en' />
+
 <!DOCTYPE html>
 <html lang="nl-NL">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-	
-	<meta name="author" content="Wooncommissie Parkhaven">
-    <meta name="description" content="Studentenflat Parkhaven Rotterdam">
-	<meta name="keywords" content="Parkhaven, Kees van Dongenhof, Coolhaven, Studentenhuis, Studentenflat, Stadswonen, Studenten, Starters, huren, Rotterdam">
-	<meta name="language" content="Dutch">
-	<meta name="robots" content="index, follow">
-	<meta name="distribution" content="global">
-
-	<link rel="icon" href="img/favicon.ico" type="image/x-icon">
-
-    <title>Woongebouw Parkhaven</title>
-
-    <link rel="stylesheet" href="css/custom.min.css">
-	
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css">
+  <?php include('head.php'); ?>
 </head>
 
 <body>
   <nav class="navbar navbar-default" role="navigation">
     <div class="container">
       <div >
-        <a href="index.html" class="navbar-left"><img id="menu-img" src="img/parkhaven-logo.png"></a>
+        <a href="index.php" class="navbar-left"><img id="menu-img" src="img/parkhaven-logo.png"></a>
 
         <ul class="nav navbar-nav">
           <li class="active">
-            <a href="index.html">Home</a>
+            <a href="index.php">Home</a>
           </li>
           <li>
             <a id="dLabel" data-target="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
@@ -38,10 +24,10 @@
             </a>
             <ul class="dropdown-menu" aria-labelledby="dLabel">
               <li class="dropdown_li">
-                <a class="dropdown_a" href="contact.html">Contact</a>
+                <a class="dropdown_a" href="wooncommissie.php">Committee</a>
               </li>
               <li class="dropdown_li">
-                <a id="last_dropdown" class="dropdown_a" href="wooncommissie.html">Committee</a>
+                <a id="last_dropdown" class="dropdown_a" href="contact.php">Contact</a>
               </li>
             </ul>
           </li>
@@ -51,23 +37,23 @@
             </a>
             <ul class="dropdown-menu" aria-labelledby="dLabel">
               <li class="dropdown_li">
-                <a class="dropdown_a" href="faciliteiten.html">Facilities</a>
+                <a class="dropdown_a" href="faciliteiten.php">Facilities</a>
               </li>
               <li class="dropdown_li">
-                <a class="dropdown_a" href="vuilafvoer.html">Garbage Collection</a>
+                <a class="dropdown_a" href="vuilafvoer.php">Garbage Collection</a>
               </li>
               <li class="dropdown_li">
-                <a id="last_dropdown" class="dropdown_a" href="faqs.html">Faqs</a>
+                <a id="last_dropdown" class="dropdown_a" href="faqs.php">Faqs</a>
               </li>
             </ul>
           </li>
           <li>
-              <a href="http://95.85.35.169:8008/WasSchema">Laundry Schema</a>
+              <a href="http://198.211.125.131:8080/WasSchema">Laundry Schema</a>
           </li>
         </ul>
     
-        <a id="dutch_img" href="index.html"><img src="img/dutch.png" width="35px" height="35px"/></a>
-        <a id="english_img" href="index.en.html"><img src="img/english.jpg" width="30px" height="30px"/></a>
+        <a id="dutch_img" href="index.php"><img src="img/dutch.png" width="35px" height="35px"/></a>
+        <a id="english_img" href="index.en.php"><img src="img/english.jpg" width="30px" height="30px"/></a>
       </div>
     </div>
   </nav>
@@ -112,6 +98,7 @@
       <div class="box">
         <div class="page-header horizontal_line"></div>                
         <div class="col-xs-12">
+        <cms:editable name='main_content' type='richtext'>
           <p class="text-justify home_text">
           Welcome to the website of residential building Parkhaven in Rotterdam.
           On this website you will find general information as wel as the latest news concerning residential building Parkhaven. Residential building Parkhaven is owned by the housing corporation Stadswonen Rotterdam.
@@ -119,11 +106,13 @@
           the most multiculturily diverse and lively building by Vestia Rotterdam Stadswonen. Of the almost 400 residents of the building 70% are students. There are also several schools and places to go out, sights to see
           and public transportation at walking distance. Are you between the age of 18 and 24 years and want to live in the most lively area, then Residential building Parkhaven is the ideal place to live.
           </p>
+        </cms:editable>
           <div class="panel panel-default panel-transparent handige_links">
             <div class="panel-heading">
               <h2 class="panel-title">Helpful Links</h2>
             </div>
             <div class="panel-body">
+            <cms:editable name='side_panel' type='richtext'>
               <ul>
                 <li><a href="pdf/Beheerreglement.pdf" download="Beheerreglement">Management Rules</a></li>
                 <li><a href="pdf/Algemene_Huurvoorwaarden.pdf" download="Algemene_Huurvoorwaarden">General Rentconditions</a></li>
@@ -133,6 +122,7 @@
                 <li><a href="pdf/Vlam_in_de_pan!.pdf" download="Vlam in de Pan">Fire in dorm!</a></li>
                 <li><a href="pdf/Onderhoudswijzer.pdf" download="Onderhoudswijzer">Maintenance Guide</a></li>
               </ul>
+            </cms:editable>
             </div>
           </div>
         </div>
@@ -140,43 +130,10 @@
       </div>
     </div>
 
-    <div class="row">           
-      <div class="box stadswonen_logo">
-        <div class="col-xs-12">
-          <a href="https://www.stadswonenrotterdam.nl/">
-            <img src="img/stadswonen-logo.png" alt="Stadswonen Logo"/>
-          </a>
-        </div>
-      </div>
-    </div>
-
+    <?php include('stadswonen-logo.php'); ?>
   </div>
 
-  <footer>
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-6 text-left">
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="wooncommissie.html">Committee</a></li>
-            <li><a href="faciliteiten.html">Facilities</a></li>
-            <li><a href="vuilafvoer.html">Garbage Collection</a></li>
-            <li><a href="faqs.html">Faq's</a></li>
-            <li><a href="wasschema.html">Laundry Schema</a></li>
-          </ul>
-        </div>
-        <div class="col-xs-6 text-right">
-          <p>Copyright &copy; 2016, Alle Rechten Voorbehouden</p>
-        </div>                
-      </div>
-    </div>
-  </footer>
-
-  <script src="js/jquery.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-
-  <script></script>
-  
+  <?php include('footer.php'); ?>
 </body>
 </html>
+<?php COUCH::invoke(); ?>

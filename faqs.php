@@ -1,36 +1,22 @@
+<?php require_once( 'couch/cms.php' ); ?>
+<cms:template title='faqs' />
+
 <!DOCTYPE html>
 <html lang="nl-NL">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-	
-	<meta name="author" content="Wooncommissie Parkhaven">
-    <meta name="description" content="Studentenflat Parkhaven Rotterdam">
-	<meta name="keywords" content="Parkhaven, Kees van Dongenhof, Coolhaven, Studentenhuis, Studentenflat, Stadswonen, Studenten, Starters, huren, Rotterdam">
-	<meta name="language" content="Dutch">
-	<meta name="robots" content="index, follow">
-	<meta name="distribution" content="global">
-
-	<link rel="icon" href="img/favicon.ico" type="image/x-icon">
-
-    <title>Woongebouw Parkhaven</title>
-
-    <link rel="stylesheet" href="css/custom.min.css">	
-
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css">
+  <?php include('head.php'); ?>
 </head>
 
 <body>
     <nav class="navbar navbar-default" role="navigation">
         <div class="container">
             <div >
-				<a href="index.html" class="navbar-left"><img id="menu-img" src="img/parkhaven-logo.png"></a>
+				<a href="index.php" class="navbar-left"><img id="menu-img" src="img/parkhaven-logo.png"></a>
 
                 <ul class="nav navbar-nav">
                     <li>
-                        <a href="index.html">Home</a>
+                        <a href="index.php">Home</a>
                     </li>
 					<li>
 						<a id="dLabel" data-target="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
@@ -38,10 +24,10 @@
 						</a>
 						<ul class="dropdown-menu" aria-labelledby="dLabel">
 							<li class="dropdown_li">
-								<a class="dropdown_a" href="contact.html">Contact</a>
+								<a class="dropdown_a" href="wooncommissie.php">Wooncommissie</a>
 							</li>
-							<li class="dropdown_li">
-								<a id="last_dropdown" class="dropdown_a" href="wooncommissie.html">Wooncommissie</a>
+              <li class="dropdown_li">
+								<a id="last_dropdown" class="dropdown_a" href="contact.php">Contact</a>
 							</li>
 						</ul>
                     </li>
@@ -51,23 +37,23 @@
 						</a>
 						<ul class="dropdown-menu" aria-labelledby="dLabel">
 							<li class="dropdown_li">
-								<a class="dropdown_a" href="faciliteiten.html">Faciliteiten</a>
+								<a class="dropdown_a" href="faciliteiten.php">Faciliteiten</a>
 							</li>
 							<li class="dropdown_li">
-								<a class="dropdown_a" href="vuilafvoer.html">Vuilafvoer</a>
+								<a class="dropdown_a" href="vuilafvoer.php">Vuilafvoer</a>
 							</li>
 							<li class="dropdown_li active2">
-								<a id="last_dropdown" class="dropdown_a active2" href="faqs.html">Faqs</a>
+								<a id="last_dropdown" class="dropdown_a active2" href="faqs.php">Faqs</a>
 							</li>
 						</ul>
                     </li>
                     <li>
-                       <a href="http://95.85.35.169:8008/WasSchema">Was schema</a>
+                       <a href="http://198.211.125.131:8080/WasSchema">Was schema</a>
                     </li>
                 </ul>
 				
-				<a id="dutch_img"><img src="img/dutch.png" width="35px" height="35px"></img></a>
-				<a id="english_img"><img src="img/english.jpg" width="30px" height="30px"></img></a>
+        <a id="dutch_img" href="faqs.php"><img src="img/dutch.png" width="35px" height="35px"/></a>
+        <a id="english_img" href="faqs.en.php"><img src="img/english.jpg" width="30px" height="30px"/></a>
             </div>
         </div>
     </nav>
@@ -81,7 +67,7 @@
 
 
 				<div class="panel-group faqs_page_panel_group" id="accordion" role="tablist" aria-multiselectable="true">
-				
+				<cms:editable name='main_content' type='richtext'>
 				  <div class="panel panel-default faqs_page_panel">
 					<div class="panel-heading faqs_panel_heading" role="tab" id="headingOne">
 					  <h4 class="panel-title">
@@ -263,49 +249,15 @@
 						  </div>
 						</div>
 					</div>
-
+        </cms:editable>
 				</div>
 
                 <div class="page-header horizontal_line"></div>        
             </div>
         </div>
-		
-        <div class="row">           
-            <div class="box stadswonen_logo">
-                <div class="col-xs-12">
-                    <a href="https://www.stadswonenrotterdam.nl/">
-						<img src="img/stadswonen-logo.png" alt="Stadswonen Logo"/>
-					</a>
-                </div>
-            </div>
-		</div>
 
-    </div>
-
-
-    <footer>
-        <div class="container">
-            <div class="row footer_link_and_copyright_text">
-                <div class="col-xs-6 text-left">
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-						<li><a href="wooncommissie.html">Wooncommissie</a></li>
-						<li><a href="faciliteiten.html">Faciliteiten</a></li>
-						<li><a href="vuilafvoer.html">Vuilafvoer</a></li>
-						<li><a href="faqs.html">Faq's</a></li>
-                        <li><a href="wasschema.html">Was Schema</a></li>
-                    </ul>
-                </div>
-                <div class="col-xs-6 text-right">
-                    <p>Copyright &copy; 2016, Alle Rechten Voorbehouden</p>
-                </div>                
-            </div>
-        </div>
-    </footer>
-	
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+  <?php include('footer.php'); ?>
 </body>
 
 </html>
+<?php COUCH::invoke(); ?>
