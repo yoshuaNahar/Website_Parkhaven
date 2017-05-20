@@ -1,5 +1,5 @@
 <?php require_once( 'couch/cms.php' ); ?>
-<cms:template title='vuilafvoer'/>
+<cms:template title='vuilafvoer.en'/>
 
 <!DOCTYPE html>
 <html lang="nl-NL">
@@ -12,23 +12,23 @@
 <nav class="navbar navbar-default" role="navigation">
   <div class="container">
     <div>
-      <a href="index.php" class="navbar-left"><img id="menu-img" src="img/parkhaven-logo.png"></a>
+      <a href="index.en.php" class="navbar-left"><img id="menu-img" src="img/parkhaven-logo.png"></a>
       
       <ul class="nav navbar-nav">
         <li>
-          <a href="index.php">Home</a>
+          <a href="index.en.php">Home</a>
         </li>
         <li>
           <a id="dLabel" data-target="#" data-toggle="dropdown" role="button" aria-haspopup="true"
              aria-expanded="false">
-            Wooncommissie <span class="glyphicon glyphicon-menu-down"></span>
+            Committee <span class="glyphicon glyphicon-menu-down"></span>
           </a>
           <ul class="dropdown-menu" aria-labelledby="dLabel">
             <li class="dropdown_li">
-              <a class="dropdown_a" href="wooncommissie.php">Wooncommissie</a>
+              <a class="dropdown_a" href="wooncommissie.en.php">Committee</a>
             </li>
             <li class="dropdown_li">
-              <a id="last_dropdown" class="dropdown_a" href="contact.php">Contact</a>
+              <a id="last_dropdown" class="dropdown_a" href="contact.en.php">Contact</a>
             </li>
           </ul>
         </li>
@@ -39,18 +39,18 @@
           </a>
           <ul class="dropdown-menu" aria-labelledby="dLabel">
             <li class="dropdown_li">
-              <a class="dropdown_a" href="faciliteiten.php">Faciliteiten</a>
+              <a class="dropdown_a" href="faciliteiten.en.php">Facilities</a>
             </li>
             <li class="dropdown_li active2">
-              <a class="dropdown_a active2" href="vuilafvoer.php">Vuilafvoer</a>
+              <a class="dropdown_a active2" href="vuilafvoer.en.php">Garbage Collection</a>
             </li>
             <li class="dropdown_li">
-              <a id="last_dropdown" class="dropdown_a" href="faqs.php">Faqs</a>
+              <a id="last_dropdown" class="dropdown_a" href="faqs.en.php">Faqs</a>
             </li>
           </ul>
         </li>
         <li>
-          <a href="WasSchema">Was schema</a>
+          <a href="WasSchema">Laundry schema</a>
         </li>
       </ul>
       
@@ -69,22 +69,25 @@
       
       <div class="col-md-12">
         
-        <h2 class="facilteiten_h2">Vuilafvoer</h2>
+        <h2 class="facilteiten_h2">Garbage Collection</h2>
         <cms:editable name='main_content' type='richtext'>
           <p>
-            <b>Huisvuil</b><br>
-            Vuilniszakken, glas en papier dientg gedeponeerd te worden in de containers op het parkeerterrein naast
-            Ingang A.<br>
+            <b>House Garbage</b><br>
+            Garbage bags, glass and paper must be deposited in the containers in the parking lot next to the main
+            entrance A.<br>
+            In the entrances there are garbage bins for advertistment mail and small waste. It is not allowed to leave
+            garbage bags in or around the building!
+            <br>
             
-            In de ingangen staan vuilnisbakken voor reclamepost en klein afval. Het is niet toegestaan om vuilniszakken
-            in of rond het gebouw achter te laten!<br>
+            <b>Bulk Garbage</b><br>
             
-            <b>Grofvuil</b><br>
-            Grofvuil is alles wat niet in een container of vuilniszak past, zoals meubilair of elektrische apparaten.
-            Voor het laten ophalen van grofvuil dien je een afspraak te maken bij de Gemeente Rotterdam. Het grofvuil
-            wordt dan gratis opgehaald. Bel voor een afspraak het telefoonnummer van de gemeente Rotterdam 14 010 of
-            Reserveer online (kijk naar handige links op de homepage). Je mag de avond voor je afspraak (niet eerder dan
-            23:00) het grofvuil voor het parkeerplaats van ingang A plaatsen.<br>
+            
+            Bulk garbage is everything that does not fit in a container or garbage bag, such as furniture or electrical
+            appliances. To collect bulk garbage, you must make an appointment with the Municipality of Rotterdam. The
+            bulk garbage is then collected free of charge. Call for an appointment, phone number of the municipality of
+            Rotterdam 14 010 or make an online appointment (look at the useful links on the homepage). You can place the
+            bulk garbage in a parking place of entry A in the evening before your appointment (no earlier than
+            23:00).<br>
             
             <b><a class="link_color_blue" href="pdf/Vuilafvoer.pdf">Vuilafvoer.pdf</a></b>
           </p>
@@ -98,7 +101,7 @@
   <?php include('stadswonen-logo.php'); ?>
 </div>
 
-<?php include('footer.php'); ?>
+<?php include('footer.en.php'); ?>
 </body>
 
 </html>

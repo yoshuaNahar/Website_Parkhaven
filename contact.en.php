@@ -1,5 +1,5 @@
 <?php require_once( 'couch/cms.php' ); ?>
-<cms:template title='contact'/>
+<cms:template title='contact.en'/>
 
 <!DOCTYPE html>
 <html lang="nl-NL">
@@ -12,23 +12,23 @@
 <nav class="navbar navbar-default" role="navigation">
   <div class="container">
     <div>
-      <a href="index.php" class="navbar-left"><img id="menu-img" src="img/parkhaven-logo.png"></a>
+      <a href="index.en.php" class="navbar-left"><img id="menu-img" src="img/parkhaven-logo.png"></a>
       
       <ul class="nav navbar-nav">
         <li>
-          <a href="index.php">Home</a>
+          <a href="index.en.php">Home</a>
         </li>
         <li class="active">
           <a id="dLabel" data-target="#" data-toggle="dropdown" role="button" aria-haspopup="true"
              aria-expanded="false">
-            Wooncommissie <span class="glyphicon glyphicon-menu-down"></span>
+            Committee <span class="glyphicon glyphicon-menu-down"></span>
           </a>
           <ul class="dropdown-menu" aria-labelledby="dLabel">
             <li class="dropdown_li">
-              <a class="dropdown_a" href="wooncommissie.php">Wooncommissie</a>
+              <a class="dropdown_a" href="wooncommissie.en.php">Committee</a>
             </li>
             <li class="dropdown_li active2">
-              <a id="last_dropdown" class="dropdown_a active2" href="contact.php">Contact</a>
+              <a id="last_dropdown" class="dropdown_a active2" href="contact.en.php">Contact</a>
             </li>
           </ul>
         </li>
@@ -39,18 +39,18 @@
           </a>
           <ul class="dropdown-menu" aria-labelledby="dLabel">
             <li class="dropdown_li">
-              <a class="dropdown_a" href="faciliteiten.php">Faciliteiten</a>
+              <a class="dropdown_a" href="faciliteiten.en.php">Facilities</a>
             </li>
             <li class="dropdown_li">
-              <a class="dropdown_a" href="vuilafvoer.php">Vuilafvoer</a>
+              <a class="dropdown_a" href="vuilafvoer.en.php">Garbage Collection</a>
             </li>
             <li class="dropdown_li">
-              <a id="last_dropdown" class="dropdown_a" href="faqs.php">Faqs</a>
+              <a id="last_dropdown" class="dropdown_a" href="faqs.en.php">Faqs</a>
             </li>
           </ul>
         </li>
         <li>
-          <a href="WasSchema">Was schema</a>
+          <a href="WasSchema">Laundry schema</a>
         </li>
       </ul>
       
@@ -69,10 +69,10 @@
         
         <div class="col-md-6">
           <div class="well contact_page_well">
-            <h2>Algemene Beheerder</h2>
+            <h2>General Manager</h2>
             <ul>
               <li>Ryan Winklaar</li>
-              <li>Telefoon: 06 39089365 (Tussen 12:00 - 16:00)</li>
+              <li>Phone number: 06 39089365 (Between 12:00 - 16:00)</li>
               <li>Email: parkhaven.beh@beheerders.stadswonen.nl</li>
             </ul>
           </div>
@@ -82,22 +82,22 @@
           <div class="well contact_page_well">
             <h2>Stadswonen Rotterdam</h2>
             <ul>
-              <li>Openingstijden: Maandag t/m vrijdag 8:30 - 16:30</li>
-              <li>Telefoon: 010 2456700</li>
+              <li>Opening hours: Monday through friday 8:30 - 16:30</li>
+              <li>Phone number: 010 2456700</li>
               <li>Email: info@stadswonenrotterdam.nl</li>
-              <li>Adres: Rochussenstraat 21, 3015 EA Rotterdam</li>
+              <li>Address: Rochussenstraat 21, 3015 EA Rotterdam</li>
               <li>Website: <a href="https://www.stadswonenrotterdam.nl/" target="_blank">stadswonenrotterdam.nl</a></li>
-              <li>Noodnummer: 010 2456700</li>
+              <li>Emergency number: 010 2456700</li>
             </ul>
           </div>
         </div>
         
         <div class="col-md-6 techBeheerder_under_algBeheerder_well">
           <div class="well contact_page_well">
-            <h2>Technische Beheerder</h2>
+            <h2>Technical Manager</h2>
             <ul>
               <li>Shelmer Rijsenburg</li>
-              <li>Telefoon: 06 39089366 (Tussen 19:00 - 22:00)</li>
+              <li>Phone number: 06 39089366 (Between 19:00 - 22:00)</li>
               <li>Email: parkhaven.ab@beheerders.stadswonen.nl</li>
             </ul>
           </div>
@@ -120,13 +120,13 @@
         <cms:editable name='spreekuur' type='richtext'>
           <div class="panel panel-default panel-transparent">
             <div class="panel-heading">
-              <h2 class="panel-title">Spreekuur</h2>
+              <h2 class="panel-title">Consultation hour</h2>
             </div>
             <div class="panel-body">
               <ul class="contact_spreekuur_panel" style="list-style-type:none">
-                <li>Elke Maandag</li>
-                <li>Tijdstip: 20:30 - 21:30</li>
-                <li>Locatie: Kamer 225 2e verdieping (gele gang)</li>
+                <li>Every Monday</li>
+                <li>Time: 20:30 - 21:30</li>
+                <li>Location: Room 225 2nd floor (yellow hallway)</li>
               </ul>
             </div>
           </div>
@@ -140,7 +140,7 @@
   <?php include('stadswonen-logo.php'); ?>
 </div>
 
-<?php include('footer.php'); ?>
+<?php include('footer.en.php'); ?>
 </body>
 
 </html>

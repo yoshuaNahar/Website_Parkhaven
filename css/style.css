@@ -1,44 +1,45 @@
+/* Put in Custom style if want to edit */
 .link_color_blue {
-    color: #23527c
+  color: #23527c
 }
 body {
   color: #222;
 }
 a,
 p {
-    color: #222;
+  color: #222;
 }
 
 .container,
 nav {
-    width: 1170px!important
+  width: 1170px!important
 }
 
 #dutch_img,
 #english_img {
-    position: absolute;
-    top: 30px;
-    float: right
+  position: absolute;
+  top: 30px;
+  float: right
 }
 
 footer li,
 p {
-    line-height: 1.6
+  line-height: 1.6
 }
 
 #wooncommissie_table>caption,
 .dropdown_li,
 .stadswonen_logo {
-    text-align: center
+  text-align: center
 }
 
 body {
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    background: url(../img/IMG.jpg) center center no-repeat fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background: url(../img/background-image.jpeg) center center no-repeat fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover
 }
 
 h1,
@@ -47,177 +48,177 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: Arial, Tahoma, Helvetica, "Helvetica Neue", , sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 1px
+  font-family: Arial, Tahoma, Helvetica, "Helvetica Neue", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px
 }
 
 h1 {
-    margin: 0;
-    font-family: "Josefin Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 2em;
-    font-weight: 800
+  margin: 0;
+  font-family: "Josefin Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 2em;
+  font-weight: 800
 }
 
 h2,
 h4 {
-    font-weight: 600
+  font-weight: 600
 }
 
 h2 {
-    font-size: 1.1em;
-    margin-left: 20px;
-    text-decoration: underline
+  font-size: 1.1em;
+  margin-left: 20px;
+  text-decoration: underline
 }
 
 h4 {
-    font-family: "Open Sans";
-    letter-spacing: .3px
+  font-family: "Open Sans";
+  letter-spacing: .3px
 }
 
 p {
-    font-size: 1.2em;
-    font-weight: 310
+  font-size: 1.2em;
+  font-weight: 400
 }
 
 .well h2 {
-    margin-top: 0
+  margin-top: 0
 }
 
 .well {
-    background: rgba(255, 255, 255, .4)
+  background: rgba(255, 255, 255, .4)
 }
 
 nav {
-    box-shadow: 0 0 8px 0 rgba(0, 0, 0, .1), 0 4px 4px 0 rgba(0, 0, 0, .15);
-    margin-left: auto!important;
-    margin-right: auto!important;
-    background: rgba(255, 255, 255, .75)!important;
-    margin-bottom: 18px!important
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, .1), 0 4px 4px 0 rgba(0, 0, 0, .15);
+  margin-left: auto!important;
+  margin-right: auto!important;
+  background: rgba(255, 255, 255, .75)!important;
+  margin-bottom: 18px!important
 }
 
 .navbar-nav>.active>a,
 .navbar-nav>.active>a:focus,
 .navbar-nav>.active>a:hover {
-    background: rgba(111, 188, 133, .5)!important
+  background: rgba(111, 188, 133, .5)!important
 }
 
 .dropdown_menu>a,
 .dropdown_menu>a:focus,
 .dropdown_menu>a:hover {
-    background: rgba(111, 188, 133, .5)!important;
-    color: #555;
-    outline: 0
+  background: rgba(111, 188, 133, .5)!important;
+  color: #555;
+  outline: 0
 }
 
 .navbar-default {
-    margin-top: 10px
+  margin-top: 10px
 }
 
 .navbar-nav {
-    text-transform: uppercase;
-    font-weight: 400;
-    letter-spacing: 3px
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 3px
 }
 
 #english_img {
-    right: 50px
+  right: 50px
 }
 
 #dutch_img {
-    right: 120px
+  right: 100px
 }
 
 #menu-img {
-    width: 155px;
-    height: 82px;
-    margin: 6px -300px 0 0
+  width: 155px;
+  height: 82px;
+  margin: 6px -300px 0 0
 }
 
 .carousel_main_img {
-    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, .3), 0 6px 15px 0 rgba(0, 0, 0, .22);
-    min-width: 100%;
-    height: 310px
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, .3), 0 6px 15px 0 rgba(0, 0, 0, .22);
+  min-width: 100%;
+  height: 310px
 }
 
 .box-img {
-    margin-bottom: 18px;
-    background: #fff;
-    background: rgba(255, 255, 255, .9);
-    box-shadow: 0 -1px 8px 0 rgba(0, 0, 0, .15), 0 6px 15px 0 rgba(0, 0, 0, .19)
+  margin-bottom: 18px;
+  background: #fff;
+  background: rgba(255, 255, 255, .9);
+  box-shadow: 0 -1px 8px 0 rgba(0, 0, 0, .15), 0 6px 15px 0 rgba(0, 0, 0, .19)
 }
 
 .brand-before,
 .brand-name {
-    text-transform: capitalize
+  text-transform: capitalize
 }
 
 .brand-before {
-    margin: 15px 0
+  margin: 15px 0
 }
 
 .brand-name {
-    margin: 0;
-    font-size: 4em
+  margin: 0;
+  font-size: 4em
 }
 
 .tagline-divider {
-    margin: 15px auto 3px;
-    max-width: 250px;
-    border-color: #999
+  margin: 15px auto 3px;
+  max-width: 250px;
+  border-color: #999
 }
 
 .box {
-    margin-bottom: 18px;
-    padding: 30px 15px;
-    background: #fff;
-    background: rgba(255, 255, 255, .85);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .15), 0 6px 15px 0 rgba(0, 0, 0, .19);
-    box-shadow: 0 -1px 8px 0 rgba(0, 0, 0, .15), 0 6px 15px 0 rgba(0, 0, 0, .19)
+  margin-bottom: 18px;
+  padding: 30px 15px;
+  background: #fff;
+  background: rgba(255, 255, 255, .85);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .15), 0 6px 15px 0 rgba(0, 0, 0, .19);
+  box-shadow: 0 -1px 8px 0 rgba(0, 0, 0, .15), 0 6px 15px 0 rgba(0, 0, 0, .19)
 }
 
 .panel-transparent {
-    background: 0 0!important;
-    margin-bottom: 10px
+  background: 0 0!important;
+  margin-bottom: 10px
 }
 
 .panel-body ul li {
-    margin-bottom: 7px
+  margin-bottom: 7px
 }
 
 .img-border,
 .img-left {
-    float: none;
-    margin: 0 auto
+  float: none;
+  margin: 0 auto
 }
 
 .panel-transparent .panel-heading {
-    background: rgba(111, 188, 133, .4)
+  background: rgba(111, 188, 133, .4)
 }
 
 .img-border {
-    border: 1px solid #999
+  border: 1px solid #999
 }
 
 .dropdown-menu {
-    padding: 0;
-    margin: 0;
-    border: none;
-    background-color: transparent;
-    margin-top: 2px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.125);
+  padding: 0;
+  margin: 0;
+  border: none;
+  background-color: transparent;
+  margin-top: 2px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.125);
 }
 
 .dropdown_a,
 .dropdown_a:last-child {
-    border-style: solid;
-    border-color: #555
+  border-style: solid;
+  border-color: #555
 }
 
 .dropdown_li {
-    background: rgba(255, 255, 255, 0);
-    font-weight: 400;
-    font-size: 14px
+  background: rgba(255, 255, 255, 0);
+  font-weight: 400;
+  font-size: 14px
 }
 
 a.active2,
@@ -229,13 +230,13 @@ a.active2:hover {
 
 
 .dropdown_a {
-    margin: 0!important;
-    padding: 20px 0 0!important;
-    width: 266.92px;
-    height: 60px;
-    border-width: 1px 0 0;
-    font-size: 15px;
-    background-color: rgba(241, 241, 241, 0.95);
+  margin: 0!important;
+  padding: 20px 0 0!important;
+  width: 266.92px;
+  height: 60px;
+  border-width: 1px 0 0;
+  font-size: 15px;
+  background-color: rgba(241, 241, 241, 0.95);
 }
 
 .dropdown_a:focus,
@@ -245,192 +246,191 @@ a.active2:hover {
 
 #wooncommissie_table,
 .home_text {
-    width: 700px
+  width: 700px
 }
 
 .dropdown_a:last-child {
-    border-width: 0 0 1px
+  border-width: 0 0 1px
 }
 
 #last_dropdown {
-    border-style: none!important
+  border-style: none!important
 }
 
 .horizontal_line {
-    border-bottom: 1px solid #ccc
+  border-bottom: 1px solid #ccc
 }
 
 div.box>.horizontal_line:first-child {
-    margin: 0 15px 10px;
-    padding: 0
+  margin: 0 15px 10px;
+  padding: 0
 }
 
 div.box>.horizontal_line:last-child {
-    margin: 0 15px;
-    padding: 18px 0 0;
-    clear: left
+  margin: 0 15px;
+  padding: 18px 0 0;
+  clear: left
 }
 
 footer p,
 footer ul {
-    padding: 30px 0;
-    margin: 0
+  padding: 30px 0;
+  margin: 0
 }
 
 .stadswonen_logo {
-    height: 130px
+  height: 130px
 }
 
 .stadswonen_logo img {
-    margin-top: 5px
+  margin-top: 5px
 }
 
 footer {
-    font-size: 11px;
-    width: 100%;
-    min-width: 1170px;
-    background: #fff;
-    background: rgba(255, 255, 255, .9);
-    box-shadow: 0 -1px 8px 0 rgba(0, 0, 0, .15), 0 6px 15px 0 rgba(0, 0, 0, .19)
+  font-size: 11px;
+  width: 100%;
+  min-width: 1170px;
+  background: #fff;
+  background: rgba(255, 255, 255, .9);
+  box-shadow: 0 -1px 8px 0 rgba(0, 0, 0, .15), 0 6px 15px 0 rgba(0, 0, 0, .19)
 }
 
 footer ul {
-    list-style: none
+  list-style: none
 }
 
 footer li {
-    font-size: 1.25em;
-    margin: 0;
-    padding: 0 5px;
-    display: inline
+  font-size: 1.25em;
+  margin: 0;
+  padding: 0 5px;
+  display: inline
 }
 
 .home_text {
-    float: left
+  float: left
 }
 
 .handige_links {
-    margin: 6px 0 0 720px
+  margin: 6px 0 0 720px
 }
 
 #wooncommissie_table tr>td:first-child {
-    padding-left: 38px
+  padding-left: 38px
 }
 
 .techBeheerder_under_algBeheerder_well {
-    margin-top: -55px
+  margin-top: -55px
 }
 
 .contact_page_well {
-    margin-left: 0
+  margin-left: 0
 }
 
 .contact_spreekuur_panel {
-    padding-left: 20px
+  padding-left: 20px
 }
 
 .facilteiten_h2:first-child {
-    margin-top: 5px
+  margin-top: 5px
 }
 
 .facilteiten_h2 {
-    margin: 25px 0 8px;
-    padding: 12px 0 12px 25px;
-    background-color: rgba(111, 188, 133, .4)
+  margin: 25px 0 8px;
+  padding: 12px 0 12px 25px;
+  background-color: rgba(111, 188, 133, .4)
 }
 
 .facilteiten_h2~p {
-    margin-left: 4px
+  margin-left: 4px
 }
 
 .faqs_page_panel_group {
-    margin: 0 15px
+  margin: 0 15px
 }
 
 .faqs_page_panel {
-    margin: 15px 0!important;
-    background-color: transparent
+  margin: 15px 0!important;
+  background-color: transparent
 }
 
 .faqs_panel_collapse,
 .faqs_panel_heading {
-    background: rgba(255, 255, 255, .4)!important
+  background: rgba(255, 255, 255, .4)!important
 }
 
 span.glyphicon-menu-right {
-    font-size: .8em
+  font-size: .8em
 }
 
 span.glyphicon-menu-down {
-    font-size: .9em
+  font-size: .9em
 }
 
 @media screen and (min-width:768px) {
-    .address-bar,
-    .brand {
-        display: inherit;
-        text-align: center;
-        text-shadow: 1px 1px 2px rgba(0, 0, 0, .5);
-        color: #fff
-    }
-    .brand,
-    .navbar-nav>li>a {
-        line-height: normal
-    }
-    .brand {
-        margin: 0;
-        padding: 10px 0;
-        font-family: "Josefin Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
-        font-size: 5em;
-        font-weight: 700
-    }
-    .top-divider {
-        margin-top: 0
-    }
-    .img-left {
-        float: left;
-        margin-right: 25px
-    }
-    .address-bar {
-        margin: 0;
-        padding: 0 0 10px;
-        text-transform: uppercase;
-        font-size: 1.25em;
-        font-weight: 400;
-        letter-spacing: 3px
-    }
-    .navbar {
-        border-radius: 0;
-        min-height: 0
-    }
-    .navbar-header {
-        display: none
-    }
-    .navbar-default {
-        border: none;
-        background: #fff;
-        background: rgba(255, 255, 255, .9)
-    }
-    .nav>li>a {
-        padding: 35px 30px
-    }
-    .nav>li>#dLabel {
-        padding: 35px 20px 35px 30px
-    }
-    .navbar-nav {
-        display: table;
-        float: none;
-        margin: 0 auto;
-        table-layout: fixed;
-        font-size: 1.25em
-    }
+  .address-bar,
+  .brand {
+    display: inherit;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, .5);
+    color: #fff
+  }
+  .brand,
+  .navbar-nav>li>a {
+    line-height: normal
+  }
+  .brand {
+    margin: 0;
+    padding: 10px 0;
+    font-family: "Josefin Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 5em;
+    font-weight: 700
+  }
+  .top-divider {
+    margin-top: 0
+  }
+  .img-left {
+    float: left;
+    margin-right: 25px
+  }
+  .address-bar {
+    margin: 0;
+    padding: 0 0 10px;
+    text-transform: uppercase;
+    font-size: 1.25em;
+    font-weight: 400;
+    letter-spacing: 3px
+  }
+  .navbar {
+    border-radius: 0;
+    min-height: 0
+  }
+  .navbar-header {
+    display: none
+  }
+  .navbar-default {
+    border: none;
+    background: #fff;
+    background: rgba(255, 255, 255, .9)
+  }
+  .nav>li>a {
+    padding: 35px 30px
+  }
+  .nav>li>#dLabel {
+    padding: 35px 20px 35px 30px
+  }
+  .navbar-nav {
+    display: table;
+    float: none;
+    margin: 0 auto;
+    table-layout: fixed;
+    font-size: 1.25em
+  }
 }
 
-
 @media screen and (min-width:1200px) {
-    .box:after {
-        content: '';
-        display: table;
-        clear: both
-    }
+  .box:after {
+    content: '';
+    display: table;
+    clear: both
+  }
 }
