@@ -1,11 +1,40 @@
-<?php require_once( 'couch/cms.php' ); ?>
-<cms:template title='homepage.en'/>
-
 <!DOCTYPE html>
 <html lang="nl-NL">
 
 <head>
-  <?php include('head.php'); ?>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <meta name="author" content="Wooncommissie Parkhaven">
+  <meta name="description" content="Studentenflat Parkhaven Rotterdam">
+  <meta name="keywords"
+        content="Parkhaven, Kees van Dongenhof, Coolhaven, Studentenhuis, Studentenflat, Stadswonen, Studenten, Starters, huren, Rotterdam">
+  <meta name="language" content="Dutch">
+  <meta name="robots" content="index, follow">
+  <meta name="distribution" content="global">
+
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+
+  <title>Woongebouw Parkhaven</title>
+
+  <link rel="stylesheet" href="css/custom.min.css">
+
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800"
+        rel="stylesheet" type="text/css">
+  <link href="http://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic"
+        rel="stylesheet" type="text/css">
+
+  <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous">
+  </script>
+
+  <script>
+    $(function () {
+      $("#footer").load("footer.html");
+    });
+  </script>
 </head>
 
 <body>
@@ -13,7 +42,7 @@
   <div class="container">
     <div>
       <a href="index.en.php" class="navbar-left"><img id="menu-img" src="img/parkhaven-logo.png"></a>
-      
+
       <ul class="nav navbar-nav">
         <li class="active">
           <a href="index.en.php">Home</a>
@@ -53,7 +82,7 @@
           <a href="WasSchema">Laundry Schema</a>
         </li>
       </ul>
-      
+
       <a id="dutch_img" href="index.php"><img src="img/dutch.png" width="35px" height="35px"/></a>
       <a id="english_img" href="index.en.php"><img src="img/english.jpeg" width="30px" height="30px"/></a>
     </div>
@@ -65,7 +94,7 @@
   <div class="row">
     <div class="box-img">
       <div id="carousel-example-generic" class="carousel slide img-full" data-ride="carousel">
-        
+
         <ol class="carousel-indicators">
           <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
           <li data-target="#carousel-example-generic" data-slide-to="1"></li>
@@ -73,7 +102,7 @@
           <li data-target="#carousel-example-generic" data-slide-to="3"></li>
           <li data-target="#carousel-example-generic" data-slide-to="4"></li>
         </ol>
-        
+
         <div class="carousel-inner carousel_main_img" role="listbox">
           <div class="item active">
             <img src="img/mainimg.jpeg" class="carousel_main_img" alt="main img">
@@ -94,55 +123,50 @@
       </div>
     </div>
   </div>
-  
-  
+
+
   <div class="row">
     <div class="box">
       <div class="page-header horizontal_line"></div>
       <div class="col-xs-12">
-        <cms:editable name='main_content' type='richtext'>
-          <p class="text-justify home_text">
-            Welcome to the website of residential building Parkhaven in Rotterdam.
-            On this website you will find general information as wel as the latest news concerning residential building
-            Parkhaven. Residential building Parkhaven is owned by the housing corporation Stadswonen Rotterdam.
-            The building is strategically located at the edge of centre of Rotterdam, on the Coolhaveneiland. A former
-            office building that was bought in the 90' en rebuild to one of
-            the most multiculturily diverse and lively building by Vestia Rotterdam Stadswonen. Of the almost 400
-            residents of the building 70% are students. There are also several schools and places to go out, sights to
-            see
-            and public transportation at walking distance. Are you between the age of 18 and 24 years and want to live
-            in the most lively area, then Residential building Parkhaven is the ideal place to live.
-          </p>
-        </cms:editable>
+        <p class="text-justify home_text">
+          Welcome to the website of residential building Parkhaven in Rotterdam.
+          On this website you will find general information as wel as the latest news concerning residential building
+          Parkhaven. Residential building Parkhaven is owned by the housing corporation Stadswonen Rotterdam.
+          The building is strategically located at the edge of centre of Rotterdam, on the Coolhaveneiland. A former
+          office building that was bought in the 90' en rebuild to one of
+          the most multiculturily diverse and lively building by Vestia Rotterdam Stadswonen. Of the almost 400
+          residents of the building 70% are students. There are also several schools and places to go out, sights to
+          see
+          and public transportation at walking distance. Are you between the age of 18 and 24 years and want to live
+          in the most lively area, then Residential building Parkhaven is the ideal place to live.
+        </p>
         <div class="panel panel-default panel-transparent handige_links">
           <div class="panel-heading">
             <h2 class="panel-title">Helpful Links</h2>
           </div>
           <div class="panel-body">
-            <cms:editable name='side_panel' type='richtext'>
-              <ul>
-                <li><a href="pdf/Beheerreglement.pdf" download="Beheerreglement">Management Rules</a></li>
-                <li><a href="pdf/Algemene_Huurvoorwaarden.pdf" download="Algemene_Huurvoorwaarden">General
-                  Rentconditions</a></li>
-                <li><a href="https://www.stadswonenrotterdam.nl/">Repair Request</a></li>
-                <li><a href="http://www.rotterdam.nl/product:grofvuil_naar_milieupark_brengen">Collection of Other
-                  Garbage</a></li>
-                <li><a href="https://www.politie.nl/themas/diefstal-fiets.html">Declaration Bicycle Theft</a></li>
-                <li><a href="pdf/Vlam_in_de_pan!.pdf" download="Vlam in de Pan">Fire in dorm!</a></li>
-                <li><a href="pdf/Onderhoudswijzer.pdf" download="Onderhoudswijzer">Maintenance Guide</a></li>
-              </ul>
-            </cms:editable>
+            <ul>
+              <li><a href="../pdf/Beheerreglement.pdf" download="Beheerreglement">Management Rules</a></li>
+              <li><a href="../pdf/Algemene_Huurvoorwaarden.pdf" download="Algemene_Huurvoorwaarden">General
+                Rentconditions</a></li>
+              <li><a href="https://www.stadswonenrotterdam.nl/">Repair Request</a></li>
+              <li><a href="http://www.rotterdam.nl/product:grofvuil_naar_milieupark_brengen">Collection of Other
+                Garbage</a></li>
+              <li><a href="https://www.politie.nl/themas/diefstal-fiets.html">Declaration Bicycle Theft</a></li>
+              <li><a href="../pdf/Vlam_in_de_pan!.pdf" download="Vlam in de Pan">Fire in dorm!</a></li>
+              <li><a href="../pdf/Onderhoudswijzer.pdf" download="Onderhoudswijzer">Maintenance Guide</a></li>
+            </ul>
           </div>
         </div>
       </div>
       <div class="page-header horizontal_line"></div>
     </div>
   </div>
-  
+
   <?php include('stadswonen-logo.php'); ?>
 </div>
 
-<?php include('footer.en.php'); ?>
+<div id="footer"/>
 </body>
 </html>
-<?php COUCH::invoke(); ?>
