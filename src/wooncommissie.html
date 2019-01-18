@@ -1,22 +1,17 @@
-<?php require_once( 'couch/cms.php' ); ?>
-<cms:template title='wooncommissie'/>
-
 <!DOCTYPE html>
 <html lang="nl-NL">
 
-<head>
-  <?php include('head.php'); ?>
-</head>
+${require('./partials/head.html'}
 
 <body>
 <nav class="navbar navbar-default" role="navigation">
   <div class="container">
     <div>
-      <a href="index.php" class="navbar-left"><img id="menu-img" src="img/parkhaven-logo.png"></a>
+      <a href="index.html" class="navbar-left"><img id="menu-img" src="img/parkhaven-logo.png"></a>
       
       <ul class="nav navbar-nav">
         <li>
-          <a href="index.php">Home</a>
+          <a href="index.html">Home</a>
         </li>
         <li class="active">
           <div id="temp"></div>
@@ -26,10 +21,10 @@
           </a>
           <ul class="dropdown-menu" aria-labelledby="dLabel">
             <li class="dropdown_li active2">
-              <a class="dropdown_a active2" href="wooncommissie.php">Wooncommissie</a>
+              <a class="dropdown_a active2" href="wooncommissie.html">Wooncommissie</a>
             </li>
             <li class="dropdown_li">
-              <a id="last_dropdown" id="last_dropdown" class="dropdown_a" href="contact.php">Contact</a>
+              <a id="last_dropdown" id="last_dropdown" class="dropdown_a" href="contact.html">Contact</a>
             </li>
           </ul>
         </li>
@@ -40,13 +35,13 @@
           </a>
           <ul class="dropdown-menu" aria-labelledby="dLabel">
             <li class="dropdown_li">
-              <a class="dropdown_a" href="faciliteiten.php">Faciliteiten</a>
+              <a class="dropdown_a" href="faciliteiten.html">Faciliteiten</a>
             </li>
             <li class="dropdown_li">
-              <a class="dropdown_a" href="vuilafvoer.php">Vuilafvoer</a>
+              <a class="dropdown_a" href="vuilafvoer.html">Vuilafvoer</a>
             </li>
             <li class="dropdown_li">
-              <a id="last_dropdown" class="dropdown_a" href="faqs.php">Faqs</a>
+              <a id="last_dropdown" class="dropdown_a" href="faqs.html">Faqs</a>
             </li>
           </ul>
         </li>
@@ -55,8 +50,8 @@
         </li>
       </ul>
       
-      <a id="dutch_img" href="wooncommissie.php"><img src="img/dutch.png" width="35px" height="35px"/></a>
-      <a id="english_img" href="wooncommissie.en.php"><img src="img/english.jpeg" width="30px" height="30px"/></a>
+      <a id="dutch_img" href="wooncommissie.html"><img src="img/dutch.png" width="35px" height="35px"/></a>
+      <a id="english_img" href="wooncommissie.en.html"><img src="img/english.jpg" width="30px" height="30px"/></a>
     </div>
   </div>
 </nav>
@@ -69,7 +64,6 @@
       <div class="page-header horizontal_line"></div>
       
       <div class="col-md-12">
-        <cms:editable name='main_content' type='richtext'>
           <p>
             De wooncommissie vormt de vertegenwoordiging van alle bewoners van Woongebouw Parkhaven. De wooncommissie
             behartigt de belangen van de bewoners van het gebouw en vormt de schakel tussen de huurders en verhuurder
@@ -151,7 +145,6 @@
             Neem voor meer informatie contact op met de beheerder (parkhaven.beh@beheerders.stadswonen.nl) of kom langs
             tijdens het spreekuur.
           </p>
-        </cms:editable>
       </div>
       
       <div class="page-header horizontal_line"></div>
@@ -159,11 +152,10 @@
   </div>
   
   
-  <?php include('stadswonen-logo.php'); ?>
+  <?html include('stadswonen-logo.html'); ?>
 </div>
 
-<?php include('footer.php'); ?>
+<?html include('footer.html'); ?>
 </body>
 
 </html>
-<?php COUCH::invoke(); ?>

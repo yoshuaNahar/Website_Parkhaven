@@ -3,7 +3,10 @@
 Simple website for the student building Parkhaven.
 
 TODO:
-- Create a webpack configured bundled app that I can run in Firebase Hosting.
+- Check if I need the node-sass devDep and remove style-loader
+
+EXPECTED RESULT:
+- A webpack configured bundled app that I can run in Firebase Hosting.
 
 RESOURCES:
 - https://webpack.js.org/guides/asset-management/

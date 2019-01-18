@@ -1,22 +1,20 @@
-<?php require_once( 'couch/cms.php' ); ?>
+<?html require_once( 'couch/cms.html' ); ?>
 <cms:template title='vuilafvoer'/>
 
 <!DOCTYPE html>
 <html lang="nl-NL">
 
-<head>
-  <?php include('head.php'); ?>
-</head>
+${require('./partials/head.html'}
 
 <body>
 <nav class="navbar navbar-default" role="navigation">
   <div class="container">
     <div>
-      <a href="index.php" class="navbar-left"><img id="menu-img" src="img/parkhaven-logo.png"></a>
+      <a href="index.html" class="navbar-left"><img id="menu-img" src="img/parkhaven-logo.png"></a>
       
       <ul class="nav navbar-nav">
         <li>
-          <a href="index.php">Home</a>
+          <a href="index.html">Home</a>
         </li>
         <li>
           <a id="dLabel" data-target="#" data-toggle="dropdown" role="button" aria-haspopup="true"
@@ -25,10 +23,10 @@
           </a>
           <ul class="dropdown-menu" aria-labelledby="dLabel">
             <li class="dropdown_li">
-              <a class="dropdown_a" href="wooncommissie.php">Wooncommissie</a>
+              <a class="dropdown_a" href="wooncommissie.html">Wooncommissie</a>
             </li>
             <li class="dropdown_li">
-              <a id="last_dropdown" class="dropdown_a" href="contact.php">Contact</a>
+              <a id="last_dropdown" class="dropdown_a" href="contact.html">Contact</a>
             </li>
           </ul>
         </li>
@@ -39,13 +37,13 @@
           </a>
           <ul class="dropdown-menu" aria-labelledby="dLabel">
             <li class="dropdown_li">
-              <a class="dropdown_a" href="faciliteiten.php">Faciliteiten</a>
+              <a class="dropdown_a" href="faciliteiten.html">Faciliteiten</a>
             </li>
             <li class="dropdown_li active2">
-              <a class="dropdown_a active2" href="vuilafvoer.php">Vuilafvoer</a>
+              <a class="dropdown_a active2" href="vuilafvoer.html">Vuilafvoer</a>
             </li>
             <li class="dropdown_li">
-              <a id="last_dropdown" class="dropdown_a" href="faqs.php">Faqs</a>
+              <a id="last_dropdown" class="dropdown_a" href="faqs.html">Faqs</a>
             </li>
           </ul>
         </li>
@@ -54,8 +52,8 @@
         </li>
       </ul>
       
-      <a id="dutch_img" href="vuilafvoer.php"><img src="img/dutch.png" width="35px" height="35px"/></a>
-      <a id="english_img" href="vuilafvoer.en.php"><img src="img/english.jpeg" width="30px" height="30px"/></a>
+      <a id="dutch_img" href="vuilafvoer.html"><img src="img/dutch.png" width="35px" height="35px"/></a>
+      <a id="english_img" href="vuilafvoer.en.html"><img src="img/english.jpg" width="30px" height="30px"/></a>
     </div>
   </div>
 </nav>
@@ -70,7 +68,6 @@
       <div class="col-md-12">
         
         <h2 class="facilteiten_h2">Vuilafvoer</h2>
-        <cms:editable name='main_content' type='richtext'>
           <p>
             <b>Huisvuil</b><br>
             Vuilniszakken, glas en papier dientg gedeponeerd te worden in de containers op het parkeerterrein naast
@@ -86,20 +83,19 @@
             Reserveer online (kijk naar handige links op de homepage). Je mag de avond voor je afspraak (niet eerder dan
             23:00) het grofvuil voor het parkeerplaats van ingang A plaatsen.<br>
             
-            <b><a class="link_color_blue" href="../pdf/Vuilafvoer.pdf">Vuilafvoer.pdf</a></b>
+            <b><a class="link_color_blue" href="pdf/Vuilafvoer.pdf">Vuilafvoer.pdf</a></b>
           </p>
-        </cms:editable>
       </div>
       
       <div class="page-header horizontal_line"></div>
     </div>
   </div>
   
-  <?php include('stadswonen-logo.php'); ?>
+  <?html include('stadswonen-logo.html'); ?>
 </div>
 
-<?php include('footer.php'); ?>
+<?html include('footer.html'); ?>
 </body>
 
 </html>
-<?php COUCH::invoke(); ?>
+<?html COUCH::invoke(); ?>

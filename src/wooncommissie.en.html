@@ -1,22 +1,20 @@
-<?php require_once( 'couch/cms.php' ); ?>
+<?html require_once( 'couch/cms.html' ); ?>
 <cms:template title='wooncommissie.en'/>
 
 <!DOCTYPE html>
 <html lang="nl-NL">
 
-<head>
-  <?php include('head.php'); ?>
-</head>
+${require('./partials/head.html'}
 
 <body>
 <nav class="navbar navbar-default" role="navigation">
   <div class="container">
     <div>
-      <a href="index.en.php" class="navbar-left"><img id="menu-img" src="img/parkhaven-logo.png"></a>
+      <a href="index.en.html" class="navbar-left"><img id="menu-img" src="img/parkhaven-logo.png"></a>
       
       <ul class="nav navbar-nav">
         <li>
-          <a href="index.en.php">Home</a>
+          <a href="index.en.html">Home</a>
         </li>
         <li class="active">
           <div id="temp"></div>
@@ -26,10 +24,10 @@
           </a>
           <ul class="dropdown-menu" aria-labelledby="dLabel">
             <li class="dropdown_li active2">
-              <a class="dropdown_a active2" href="wooncommissie.en.php">Committee</a>
+              <a class="dropdown_a active2" href="wooncommissie.en.html">Committee</a>
             </li>
             <li class="dropdown_li">
-              <a id="last_dropdown" id="last_dropdown" class="dropdown_a" href="contact.en.php">Contact</a>
+              <a id="last_dropdown" id="last_dropdown" class="dropdown_a" href="contact.en.html">Contact</a>
             </li>
           </ul>
         </li>
@@ -40,13 +38,13 @@
           </a>
           <ul class="dropdown-menu" aria-labelledby="dLabel">
             <li class="dropdown_li">
-              <a class="dropdown_a" href="faciliteiten.en.php">Facilities</a>
+              <a class="dropdown_a" href="faciliteiten.en.html">Facilities</a>
             </li>
             <li class="dropdown_li">
-              <a class="dropdown_a" href="vuilafvoer.en.php">Garbage Collection</a>
+              <a class="dropdown_a" href="vuilafvoer.en.html">Garbage Collection</a>
             </li>
             <li class="dropdown_li">
-              <a id="last_dropdown" class="dropdown_a" href="faqs.en.php">Faqs</a>
+              <a id="last_dropdown" class="dropdown_a" href="faqs.en.html">Faqs</a>
             </li>
           </ul>
         </li>
@@ -55,8 +53,8 @@
         </li>
       </ul>
       
-      <a id="dutch_img" href="wooncommissie.php"><img src="img/dutch.png" width="35px" height="35px"/></a>
-      <a id="english_img" href="wooncommissie.en.php"><img src="img/english.jpeg" width="30px" height="30px"/></a>
+      <a id="dutch_img" href="wooncommissie.html"><img src="img/dutch.png" width="35px" height="35px"/></a>
+      <a id="english_img" href="wooncommissie.en.html"><img src="img/english.jpg" width="30px" height="30px"/></a>
     </div>
   </div>
 </nav>
@@ -69,7 +67,6 @@
       <div class="page-header horizontal_line"></div>
       
       <div class="col-md-12">
-        <cms:editable name='main_content' type='richtext'>
           <p>
             The residents committee forms the representation for all residents of Woongebouw Parkhaven. The residents
             committee serves the interests of the residents of the building and forms the link between tenants and
@@ -155,7 +152,6 @@
           
           
           </p>
-        </cms:editable>
       </div>
       
       <div class="page-header horizontal_line"></div>
@@ -163,11 +159,11 @@
   </div>
   
   
-  <?php include('stadswonen-logo.php'); ?>
+  <?html include('stadswonen-logo.html'); ?>
 </div>
 
-<?php include('footer.en.php'); ?>
+<?html include('footer.en.html'); ?>
 </body>
 
 </html>
-<?php COUCH::invoke(); ?>
+<?html COUCH::invoke(); ?>
