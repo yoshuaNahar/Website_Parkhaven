@@ -1,14 +1,15 @@
+/* Variables */
+$main-text-color: #222;
+$border-color: #555;
+
 .link_color_blue {
   color: #23527c;
 }
 
-body {
-  color: #222;
-}
-
+body,
 a,
 p {
-  color: #222;
+  color: $main-text-color;
 }
 
 .container,
@@ -73,7 +74,7 @@ h2 {
 }
 
 h4 {
-  font-family: "Open Sans";
+  font-family: "Open Sans", sans-serif;
   letter-spacing: .3px;
 }
 
@@ -110,7 +111,7 @@ nav {
 .dropdown_menu > a:focus,
 .dropdown_menu > a:hover {
   background: rgba(111, 188, 133, .5) !important;
-  color: #555;
+  color: $border-color;
   outline: 0;
 }
 
@@ -176,7 +177,6 @@ nav {
   padding: 30px 15px;
   background: #fff;
   background: rgba(255, 255, 255, .85);
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .15), 0 6px 15px 0 rgba(0, 0, 0, .19);
   box-shadow: 0 -1px 8px 0 rgba(0, 0, 0, .15), 0 6px 15px 0 rgba(0, 0, 0, .19);
 }
 
@@ -205,17 +205,15 @@ nav {
 
 .dropdown-menu {
   padding: 0;
-  margin: 0;
   border: none;
   background-color: transparent;
-  margin-top: 2px;
+  margin: 2px 0 0;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.125);
 }
 
 .dropdown_a,
 .dropdown_a:last-child {
-  border-style: solid;
-  border-color: #555;
+  border: solid $border-color;
 }
 
 .dropdown_li {
@@ -228,7 +226,7 @@ a.active2,
 a.active2:focus,
 a.active2:hover {
   background: rgba(192, 223, 201, 1) !important;
-  color: #222 !important;
+  color: $main-text-color !important;
 }
 
 .dropdown_a {

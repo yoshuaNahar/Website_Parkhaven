@@ -8,7 +8,6 @@ ${require('./partials/head.html')}
   <div class="container">
     <div>
       <a href="index.en.html" class="navbar-left"><img id="menu-img" src="img/parkhaven-logo.png"></a>
-
       <ul class="nav navbar-nav">
         <li class="active">
           <a href="index.en.html">Home</a>
@@ -45,22 +44,19 @@ ${require('./partials/head.html')}
           </ul>
         </li>
         <li>
-          <a href="WasSchema">Laundry Schema</a>
+          <a href="https://wasschema.woongebouwparkhaven.nl">Laundry schema</a>
         </li>
       </ul>
-
       <a id="dutch_img" href="index.html"><img src="img/dutch.png" width="35px" height="35px"/></a>
       <a id="english_img" href="index.en.html"><img src="img/english.jpg" width="30px" height="30px"/></a>
     </div>
   </div>
 </nav>
 
-
 <div class="container">
   <div class="row">
     <div class="box-img">
       <div id="carousel-example-generic" class="carousel slide img-full" data-ride="carousel">
-
         <ol class="carousel-indicators">
           <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
           <li data-target="#carousel-example-generic" data-slide-to="1"></li>
@@ -68,7 +64,6 @@ ${require('./partials/head.html')}
           <li data-target="#carousel-example-generic" data-slide-to="3"></li>
           <li data-target="#carousel-example-generic" data-slide-to="4"></li>
         </ol>
-
         <div class="carousel-inner carousel_main_img" role="listbox">
           <div class="item active">
             <img src="img/mainimg.jpg" class="carousel_main_img" alt="main img">
@@ -89,8 +84,6 @@ ${require('./partials/head.html')}
       </div>
     </div>
   </div>
-
-
   <div class="row">
     <div class="box">
       <div class="page-header horizontal_line"></div>
@@ -113,15 +106,15 @@ ${require('./partials/head.html')}
           </div>
           <div class="panel-body">
             <ul>
-              <li><a href="pdf/Beheerreglement.pdf" download="Beheerreglement">Management Rules</a></li>
-              <li><a href="pdf/Algemene_Huurvoorwaarden.pdf" download="Algemene_Huurvoorwaarden">General
+              <li><a href="${require('./pdf/Beheerreglement.pdf')}" download="Beheerreglement">Management Rules</a></li>
+              <li><a href="${require('./pdf/Algemene_Huurvoorwaarden.pdf')}" download="Algemene_Huurvoorwaarden">General
                 Rentconditions</a></li>
               <li><a href="https://www.stadswonenrotterdam.nl/">Repair Request</a></li>
               <li><a href="http://www.rotterdam.nl/product:grofvuil_naar_milieupark_brengen">Collection of Other
                 Garbage</a></li>
               <li><a href="https://www.politie.nl/themas/diefstal-fiets.html">Declaration Bicycle Theft</a></li>
-              <li><a href="pdf/Vlam_in_de_pan!.pdf" download="Vlam in de Pan">Fire in dorm!</a></li>
-              <li><a href="pdf/Onderhoudswijzer.pdf" download="Onderhoudswijzer">Maintenance Guide</a></li>
+              <li><a href="${require('./pdf/Vlam_in_de_pan.pdf')}" download="Vlam in de Pan">Fire in dorm!</a></li>
+              <li><a href="${require('./pdf/Onderhoudswijzer.pdf')}" download="Onderhoudswijzer">Maintenance Guide</a></li>
             </ul>
           </div>
         </div>
@@ -130,9 +123,9 @@ ${require('./partials/head.html')}
     </div>
   </div>
 
-  <?html include('stadswonen-logo.html'); ?>
+  ${require('./partials/stadswonen-logo.html')}
 </div>
 
-<div id="footer"/>
+${require('./partials/footer.en.html')}
 </body>
 </html>

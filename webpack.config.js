@@ -20,30 +20,28 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.css$/,
+        test: /\.scss$/,
         use: extractPlugin.extract({
-          fallback: 'style-loader',
-          use: 'css-loader'
+          use: ['css-loader', 'sass-loader']
         })
       },
       {
-        test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+        test: /\.pdf$/,
         use: {
           loader: 'file-loader',
           options: {
             name: '[name].[ext]',
-            outputPath: 'assets/fonts/'
+            outputPath: 'assets/pdf/'
           }
         }
       },
       {
-        test: /\.(jpg|png|ico)$/,
+        test: /\.(jpg|png)$/,
         use: {
           loader: 'file-loader',
           options: {
             name: '[name].[ext]',
-            outputPath: 'assets/img/',
-            publicPath: 'assets/img/'
+            outputPath: 'assets/img/'
           }
         }
       },
@@ -60,12 +58,19 @@ module.exports = {
   },
   plugins: [
     extractPlugin,
-    new HtmlWebpackPlugin({
-      filename: 'index.html',
-      template: 'src/index.html'
-    }),
-    // htmlWebPackPluginOtherPages('contact'),
-    new CleanWebpackPlugin(['dist']),
+    htmlWebPackPluginOtherPages('index'),
+    htmlWebPackPluginOtherPages('index.en'),
+    htmlWebPackPluginOtherPages('contact'),
+    htmlWebPackPluginOtherPages('contact.en'),
+    htmlWebPackPluginOtherPages('faciliteiten'),
+    htmlWebPackPluginOtherPages('faciliteiten.en'),
+    htmlWebPackPluginOtherPages('faqs'),
+    htmlWebPackPluginOtherPages('faqs.en'),
+    htmlWebPackPluginOtherPages('vuilafvoer'),
+    htmlWebPackPluginOtherPages('vuilafvoer.en'),
+    htmlWebPackPluginOtherPages('wooncommissie'),
+    htmlWebPackPluginOtherPages('wooncommissie.en'),
+    new CleanWebpackPlugin(['dist'])
   ],
   optimization: {
     minimize: true
@@ -76,6 +81,6 @@ function htmlWebPackPluginOtherPages(page) {
   return new HtmlWebpackPlugin({
     filename: `${page}.html`,
     template: `src/${page}.html`,
-    chunks: []
+    favicon: 'src/img/favicon.ico',
   });
 }
