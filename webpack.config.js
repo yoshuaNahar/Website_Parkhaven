@@ -9,7 +9,6 @@ const extractPlugin = new ExtractTextPlugin({
 });
 
 module.exports = {
-  mode: 'development',
   entry: {
     app: './src/js/app.js'
   },
@@ -71,10 +70,7 @@ module.exports = {
     htmlWebPackPluginOtherPages('wooncommissie'),
     htmlWebPackPluginOtherPages('wooncommissie.en'),
     new CleanWebpackPlugin(['dist'])
-  ],
-  optimization: {
-    minimize: true
-  }
+  ]
 };
 
 function htmlWebPackPluginOtherPages(page) {

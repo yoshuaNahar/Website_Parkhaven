@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "fir-531f4"
+  },
+  "targets": {
+    "fir-531f4": {
+      "hosting": {
+        "parkhaven-website": [
+          "web-ca0c1"
+        ]
+      }
+    }
+  }
+}
