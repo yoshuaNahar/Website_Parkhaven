@@ -1,12 +1,12 @@
 {
   "projects": {
-    "default": "fir-531f4"
+    "default": "parkhaven-457c4"
   },
   "targets": {
-    "fir-531f4": {
+    "parkhaven-457c4": {
       "hosting": {
         "parkhaven-website": [
-          "web-ca0c1"
+          "parkhaven-website"
         ]
       }
     }
