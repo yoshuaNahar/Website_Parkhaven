@@ -1,0 +1,122 @@
+{{#[js/layout] htmlWebpackPlugin}}
+  <nav class="navbar navbar-default" role="navigation">
+    <div class="container">
+      <div>
+        <a href="index.en.html" class="navbar-left"><img id="menu-img" src="./img/parkhaven-logo.png"></a>
+        <ul class="nav navbar-nav">
+          <li class="active">
+            <a href="index.en.html">Home</a>
+          </li>
+          <li>
+            <a id="dLabel" data-target="#" data-toggle="dropdown" role="button" aria-haspopup="true"
+               aria-expanded="false">
+              Committee <span class="glyphicon glyphicon-menu-down"></span>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="dLabel">
+              <li class="dropdown_li">
+                <a class="dropdown_a" href="wooncommissie.en.html">Committee</a>
+              </li>
+              <li class="dropdown_li">
+                <a id="last_dropdown" class="dropdown_a" href="contact.en.html">Contact</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a id="dLabel" data-target="#" data-toggle="dropdown" role="button" aria-haspopup="true"
+               aria-expanded="false">
+              Info <span class="glyphicon glyphicon-menu-down"></span>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="dLabel">
+              <li class="dropdown_li">
+                <a class="dropdown_a" href="faciliteiten.en.html">Facilities</a>
+              </li>
+              <li class="dropdown_li">
+                <a class="dropdown_a" href="vuilafvoer.en.html">Garbage Collection</a>
+              </li>
+              <li class="dropdown_li">
+                <a id="last_dropdown" class="dropdown_a" href="faqs.en.html">Faqs</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="https://wasschema.woongebouwparkhaven.nl">Laundry schema</a>
+          </li>
+        </ul>
+        <a id="dutch_img" href="index.html"><img src="./img/dutch.png" width="35px" height="35px"/></a>
+        <a id="english_img" href="index.en.html"><img src="./img/english.jpg" width="30px" height="30px"/></a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="row">
+      <div class="box-img">
+        <div id="carousel-example-generic" class="carousel slide img-full" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+          </ol>
+          <div class="carousel-inner carousel_main_img" role="listbox">
+            <div class="item active">
+              <img src="./img/mainimg.jpg" class="carousel_main_img" alt="main img">
+            </div>
+            <div class="item">
+              <img src="./img/mainimg3.jpg" class="carousel_main_img" alt="main img">
+            </div>
+            <div class="item">
+              <img src="./img/mainimg4.jpg" class="carousel_main_img" alt="main img">
+            </div>
+            <div class="item">
+              <img src="./img/mainimg2.jpg" class="carousel_main_img" alt="main img">
+            </div>
+            <div class="item">
+              <img src="./img/mainimg5.jpg" class="carousel_main_img" alt="main img">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="box">
+        <div class="page-header horizontal_line"></div>
+        <div class="col-xs-12">
+          <p class="text-justify home_text">
+            Welcome to the website of residential building Parkhaven in Rotterdam.
+            On this website you will find general information as wel as the latest news concerning residential building
+            Parkhaven. Residential building Parkhaven is owned by the housing corporation Stadswonen Rotterdam.
+            The building is strategically located at the edge of centre of Rotterdam, on the Coolhaveneiland. A former
+            office building that was bought in the 90' en rebuild to one of
+            the most multiculturily diverse and lively building by Stadswonen Rotterdam. Of the almost 400
+            residents of the building 90% are students. There are also several schools and places to go out, sights to
+            see
+            and public transportation at walking distance. Are you between the age of 18 and 24 years and want to live
+            in the most lively area, then Residential building Parkhaven is the ideal place to live.
+          </p>
+          <div class="panel panel-default panel-transparent handige_links">
+            <div class="panel-heading">
+              <h2 class="panel-title">Helpful Links</h2>
+            </div>
+            <div class="panel-body">
+              <ul>
+                <li><a href="./pdf/Beheerreglement_2019.pdf" download>Management Rules</a></li>
+                <li><a href="./pdf/Algemene_huurvoorwaarden_juli_2019.pdf" download>General Rentconditions</a></li>
+                <li><a href="https://reparatieverzoekstadswonen.cedcloud.com/#/dashboard">Repair Request</a></li>
+                <li><a href="https://www.rotterdam.nl/afval">Collection of Other
+                  Garbage</a></li>
+                <li><a href="https://www.politie.nl/aangifte-of-melding-doen/aangifte-van-diefstal-fiets.html">Declaration
+                  Bicycle Theft</a></li>
+                <li><a href="./pdf/Vlam_in_de_pan.pdf" download="Vlam in de Pan">Fire in dorm!</a></li>
+                <li><a href="./pdf/Onderhoudswijzer-binnen-beheerstructuur.pdf" download>Maintenance Guide</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="page-header horizontal_line"></div>
+      </div>
+    </div>
+  </div>
+{{/[js/layout]}}

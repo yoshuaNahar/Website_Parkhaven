@@ -1,82 +1,64 @@
 const path = require('path');
 
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const CleanWebpackPlugin = require('clean-webpack-plugin');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
-
-const extractPlugin = new ExtractTextPlugin({
-  filename: 'main.css'
-});
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
-  entry: {
-    app: './src/js/app.js'
-  },
-  output: {
-    path: path.resolve(__dirname, 'dist'),
-    filename: 'bundle.js',
-  },
-  module: {
-    rules: [
-      {
-        test: /\.scss$/,
-        use: extractPlugin.extract({
-          use: ['css-loader', 'sass-loader']
-        })
-      },
-      {
-        test: /\.pdf$/,
-        use: {
-          loader: 'file-loader',
-          options: {
-            name: '[name].[ext]',
-            outputPath: 'assets/pdf/'
-          }
-        }
-      },
-      {
-        test: /\.(jpg|png)$/,
-        use: {
-          loader: 'file-loader',
-          options: {
-            name: '[name].[ext]',
-            outputPath: 'assets/img/'
-          }
-        }
-      },
-      {
-        test: /\.html$/,
-        use: {
-          loader: 'html-loader',
-          options: {
-            interpolate: true
-          }
-        }
-      }
+    entry:  './src/js/index.js',
+    output: {
+        path: path.resolve(__dirname, 'dist'),
+        filename: 'bundle.js',
+    },
+    module: {
+        rules: [
+            {
+                test: /\.(sc|c)ss$/,
+                use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader']
+            },
+            {
+                test: /\.hbs$/,
+                loader: "handlebars-loader",
+                options: {
+                    inlineRequires: /\.(png|jpg|pdf)$/
+                }
+            },
+            {
+                test: /\.(png|jpg)$/,
+                type: 'asset/resource',
+                generator: {
+                    filename: 'assets/img/[hash].[ext]'
+                }
+            },
+            {
+                test: /\.pdf$/,
+                type: 'asset/resource',
+                generator: {
+                    filename: 'assets/pdf/[name].[ext]'
+                }
+            },
+        ]
+    },
+    plugins: [
+        new MiniCssExtractPlugin(),
+        htmlWebPackPluginPage('index'),
+        htmlWebPackPluginPage('index.en'),
+        htmlWebPackPluginPage('contact'),
+        htmlWebPackPluginPage('contact.en'),
+        htmlWebPackPluginPage('faciliteiten'),
+        htmlWebPackPluginPage('faciliteiten.en'),
+        htmlWebPackPluginPage('faqs'),
+        htmlWebPackPluginPage('faqs.en'),
+        htmlWebPackPluginPage('vuilafvoer'),
+        htmlWebPackPluginPage('vuilafvoer.en'),
+        htmlWebPackPluginPage('wooncommissie'),
+        htmlWebPackPluginPage('wooncommissie.en'),
     ]
-  },
-  plugins: [
-    extractPlugin,
-    htmlWebPackPluginOtherPages('index'),
-    htmlWebPackPluginOtherPages('index.en'),
-    htmlWebPackPluginOtherPages('contact'),
-    htmlWebPackPluginOtherPages('contact.en'),
-    htmlWebPackPluginOtherPages('faciliteiten'),
-    htmlWebPackPluginOtherPages('faciliteiten.en'),
-    htmlWebPackPluginOtherPages('faqs'),
-    htmlWebPackPluginOtherPages('faqs.en'),
-    htmlWebPackPluginOtherPages('vuilafvoer'),
-    htmlWebPackPluginOtherPages('vuilafvoer.en'),
-    htmlWebPackPluginOtherPages('wooncommissie'),
-    htmlWebPackPluginOtherPages('wooncommissie.en'),
-    new CleanWebpackPlugin(['dist'])
-  ]
 };
 
-function htmlWebPackPluginOtherPages(page) {
-  return new HtmlWebpackPlugin({
-    filename: `${page}.html`,
-    template: `src/${page}.html`,
-    favicon: 'src/img/favicon.ico',
-  });
+function htmlWebPackPluginPage(page) {
+    return new HtmlWebpackPlugin({
+        filename: `${page}.html`,
+        template: `src/${page}.hbs`,
+        favicon: 'src/img/favicon.ico',
+    });
 }

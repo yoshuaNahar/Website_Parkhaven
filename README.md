@@ -1,19 +1,13 @@
-#### Woongebouw Parkhaven Website
+#### Website Woongebouw Parkhaven
 
 Simple website for the student building Parkhaven.
 
-#### How To use
-`npm run develop`: spin up a webpack dev
-`npm run build`: builds a production ready version
-`firebase deploy --only hosting:parkhaven-website`: deploys content of dist folder to server
+#### Technical
+This website is hosted on S3 for static hosting. Cloudfare for HTTPS and Route 53 for the domain name.
 
-#### Notes
-Issue with Firebase and multiple sites per project: https://github.com/firebase/firebase-tools/issues/902
-I fixed it inside my firebase.json and .firebaserc
+The website changes so infrequent that a CMS was not necessary.
 
-Firebase version was: 6.3.0
-
-#### Tools:
+##### Tools:
 - Webpack 4
 - Bootstrap 3.3.7 (will not upgrade)
-- Hosted on Firebase Hosting
+- JQuery?

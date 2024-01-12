@@ -1,28 +1,24 @@
-<!DOCTYPE html>
-<html lang="nl-NL">
-
-${require('./partials/head.html')}
-
-<body>
-<nav class="navbar navbar-default" role="navigation">
+{{#[js/layout] htmlWebpackPlugin}}
+  <nav class="navbar navbar-default" role="navigation">
   <div class="container">
     <div>
-      <a href="index.en.html" class="navbar-left"><img id="menu-img" src="img/parkhaven-logo.png"></a>
+      <a href="index.html" class="navbar-left"><img id="menu-img" src="./img/parkhaven-logo.png"></a>
+
       <ul class="nav navbar-nav">
         <li>
-          <a href="index.en.html">Home</a>
+          <a href="index.html">Home</a>
         </li>
         <li class="active">
           <a id="dLabel" data-target="#" data-toggle="dropdown" role="button" aria-haspopup="true"
              aria-expanded="false">
-            Committee <span class="glyphicon glyphicon-menu-down"></span>
+            Wooncommissie <span class="glyphicon glyphicon-menu-down"></span>
           </a>
           <ul class="dropdown-menu" aria-labelledby="dLabel">
             <li class="dropdown_li">
-              <a class="dropdown_a" href="wooncommissie.en.html">Committee</a>
+              <a class="dropdown_a" href="wooncommissie.html">Wooncommissie</a>
             </li>
             <li class="dropdown_li active2">
-              <a id="last_dropdown" class="dropdown_a active2" href="contact.en.html">Contact</a>
+              <a id="last_dropdown" class="dropdown_a active2" href="contact.html">Contact</a>
             </li>
           </ul>
         </li>
@@ -33,22 +29,22 @@ ${require('./partials/head.html')}
           </a>
           <ul class="dropdown-menu" aria-labelledby="dLabel">
             <li class="dropdown_li">
-              <a class="dropdown_a" href="faciliteiten.en.html">Facilities</a>
+              <a class="dropdown_a" href="faciliteiten.html">Faciliteiten</a>
             </li>
             <li class="dropdown_li">
-              <a class="dropdown_a" href="vuilafvoer.en.html">Garbage Collection</a>
+              <a class="dropdown_a" href="vuilafvoer.html">Vuilafvoer</a>
             </li>
             <li class="dropdown_li">
-              <a id="last_dropdown" class="dropdown_a" href="faqs.en.html">Faqs</a>
+              <a id="last_dropdown" class="dropdown_a" href="faqs.html">Faqs</a>
             </li>
           </ul>
         </li>
         <li>
-          <a href="https://wasschema.woongebouwparkhaven.nl">Laundry schema</a>
+          <a href="https://wasschema.woongebouwparkhaven.nl">Wasschema</a>
         </li>
       </ul>
-      <a id="dutch_img" href="contact.html"><img src="img/dutch.png" width="35px" height="35px"/></a>
-      <a id="english_img" href="contact.en.html"><img src="img/english.jpg" width="30px" height="30px"/></a>
+      <a id="dutch_img" href="contact.html"><img src="./img/dutch.png" width="35px" height="35px"/></a>
+      <a id="english_img" href="contact.en.html"><img src="./img/english.jpg" width="30px" height="30px"/></a>
     </div>
   </div>
 </nav>
@@ -57,12 +53,13 @@ ${require('./partials/head.html')}
   <div class="row">
     <div class="box">
       <div class="page-header horizontal_line"></div>
+
       <div class="col-md-6">
         <div class="well contact_page_well">
-          <h2>General Manager</h2>
+          <h2>Algemene Beheerder</h2>
           <ul>
             <li>Shelmer Rijsenburg</li>
-            <li>Phone number: 06 39089365 (Between 12:00 - 16:00)</li>
+            <li>Telefoon: 06 39089365 (Tussen 19:00 - 22:00)</li>
             <li>Email: parkhaven.beh@beheerders.stadswonen.nl</li>
           </ul>
         </div>
@@ -71,21 +68,21 @@ ${require('./partials/head.html')}
         <div class="well contact_page_well">
           <h2>Stadswonen Rotterdam</h2>
           <ul>
-            <li>Opening hours: Monday through friday 8:30 - 16:30</li>
-            <li>Phone number: 010 2456700</li>
+            <li>Openingstijden: Maandag t/m vrijdag 8:30 - 16:30</li>
+            <li>Telefoon: 010 2456700</li>
             <li>Email: info@stadswonenrotterdam.nl</li>
-            <li>Address: Rochussenstraat 21, 3015 EA Rotterdam</li>
+            <li>Adres: Eendrachtsplein 19, 3015 LA Rotterdam</li>
             <li>Website: <a href="https://www.stadswonenrotterdam.nl/" target="_blank">stadswonenrotterdam.nl</a></li>
-            <li>Emergency number: 010 2456700</li>
+            <li>Noodnummer: 010 2456700</li>
           </ul>
         </div>
       </div>
       <div class="col-md-6 techBeheerder_under_algBeheerder_well">
         <div class="well contact_page_well">
-          <h2>Technical Manager</h2>
+          <h2>Technische Beheerder</h2>
           <ul>
             <li>Jaden Powell</li>
-            <li>Phone number: 06 39089366 (Between 19:00 - 22:00)</li>
+            <li>Telefoon: 06 39089366 (Tussen 19:00 - 22:00)</li>
             <li>Email: parkhaven.ab@beheerders.stadswonen.nl</li>
           </ul>
         </div>
@@ -104,13 +101,11 @@ ${require('./partials/head.html')}
       <div class="col-md-5">
         <div class="panel panel-default panel-transparent">
           <div class="panel-heading">
-            <h2 class="panel-title">Consultation hour</h2>
+            <h2 class="panel-title">Kantoor</h2>
           </div>
           <div class="panel-body">
             <ul class="contact_spreekuur_panel" style="list-style-type:none">
-              <li>Every Monday</li>
-              <li>Time: 20:30 - 21:30</li>
-              <li>Location: Room 225 2nd floor (yellow hallway)</li>
+              <li>Locatie: Kamer 225 2e verdieping (gele gang)</li>
             </ul>
           </div>
         </div>
@@ -118,10 +113,5 @@ ${require('./partials/head.html')}
       <div class="page-header horizontal_line"></div>
     </div>
   </div>
-
-  ${require('./partials/stadswonen-logo.html')}
 </div>
-
-${require('./partials/footer.en.html')}
-</body>
-</html>
+{{/[js/layout]}}
